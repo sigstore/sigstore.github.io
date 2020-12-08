@@ -37,16 +37,16 @@ params:
     # Button text
     buttontext: Get started
     # Where the main hero button links to
-    buttonlink: "/get_started/"
+    buttonlink: "/get_started/client/"
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
-    # - systek
-    # - tribe
-    # - kromo
-    # - infinite
-    # - gutwork
+    - systek
+    - tribe
+    - kromo
+    - infinite
+    - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: OpenAPI spec
@@ -68,28 +68,28 @@ params:
       url: /
     - title: Dropdown item
       url: /
-  # section1:
-  #   title: Great power comes
-  #   subtitle: with great responsibility
-  #   tiles:
-  #   - title: App builder
-  #     icon: mouse-globe
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Free trial
-  #   - title: Cloud integration
-  #     icon: laptop-cloud
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Get started
-  #   - title: Add-ons & plugins
-  #     icon: plug-cloud
-  #     text: This is some explanatory text that is on two rows
-  #     url: /
-  #     buttonText: Get started
+  section1:
+    title: Current Users of Rekor
+    subtitle: example projects
+    tiles:
+    - title: Acme Project
+      icon: mouse-globe
+      text: This is some explanatory text that is on two rows
+      url: /
+      buttonText: Find out more
+    - title: Another Project
+      icon: laptop-cloud
+      text: This is some explanatory text that is on two rows
+      url: /
+      buttonText: Find out more
+    - title: Add-ons & plugins
+      icon: plug-cloud
+      text: This is some explanatory text that is on two rows
+      url: /
+      buttonText: Find out more
   section2:
     title: What can rekor provide
-    subtitle: khjs
+    subtitle:
     features:
     - title: Production grade backend
       text: Rekor uses the certificate transparency project trillian as a cryptographic datastore. Trillian is production hardended software
@@ -124,54 +124,54 @@ params:
   #     job: HR Manager
   #     img: 3
   # section5: true
-  # footer:
-  #   # Logo (from /images/logos/___)
-  #   logo: fresh-white-alt.svg
-  #   # Social Media Title
-  #   socialmediatitle: Follow Us
-  #   # Social media links (GitHub, Twitter, etc.). All are optional.
-  #   socialmedia:
-  #   - link: https://github.com/lucperkins/github-fresh
-  #     # Icons are from Font Awesome
-  #     icon: github
-  #   # - link: https://dribbble.com/#
-  #   #   icon: dribbble
-  #   # - link: https://facebook.com/#
-  #   #   icon: facebook
-  #   - link: https://twitter.com/lucperkins
-  #     icon: twitter
-  #   # - link: https://bitbucket.org/#
-  #   #   icon: bitbucket
-  #   bulmalogo: true
-  #   quicklinks:
-  #     column1:
-  #       title: "Product"
-  #       links:
-  #       - text: Discover features
-  #         link: /
-  #       - text: Why choose our product?
-  #         link: /
-  #       - text: Compare features
-  #         link: /
-  #       - text: Our roadmap
-  #         link: /
-  #       - text: AGB
-  #         link: /agb
-  #     column2:
-  #       title: "Docs"
-  #       links:
-  #       - text: Get started
-  #         link: /
-  #       - text: User guides
-  #         link: /
-  #       - text: Admin guide
-  #         link: /
-  #       - text: Developers
-  #         link: /
-  #     column3:
-  #       title: "Blog"
-  #       links:
-  #       - text: Latest news
-  #         link: /blog/first
-  #       - text: Tech articles
-  #         link: /blog/second
+  footer:
+    # Logo (from /images/logos/___)
+    logo: fresh-white-alt.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/projectrekor
+      # Icons are from Font Awesome
+      icon: github
+    # - link: https://dribbble.com/#
+    #   icon: dribbble
+    # - link: https://facebook.com/#
+    #   icon: facebook
+    - link: #
+      icon: twitter
+    # - link: https://bitbucket.org/#
+    #   icon: bitbucket
+    bulmalogo: false
+    quicklinks:
+      column1:
+        title: "Product"
+        links:
+        - text: Discover features
+          link: /
+        - text: Why choose our product?
+          link: /
+        - text: Compare features
+          link: /
+        - text: Our roadmap
+          link: /
+        - text: AGB
+          link: /agb
+      column2:
+        title: "Docs"
+        links:
+        - text: Get started
+          link: /
+        - text: User guides
+          link: /
+        - text: Admin guide
+          link: /
+        - text: Developers
+          link: /
+      column3:
+        title: "Blog"
+        links:
+        - text: Latest news
+          link: /blog/first
+        - text: Tech articles
+          link: /blog/second
