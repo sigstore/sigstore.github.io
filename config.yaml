@@ -1,4 +1,4 @@
-baseURL: https://rekor.dev
+baseURL: /
 languageCode: en-us
 title: Project Rekor
 theme: hugo-fresh
