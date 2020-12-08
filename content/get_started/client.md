@@ -1,7 +1,8 @@
 ---
 title: "Client"
 date: 2020-12-08T08:06:07Z
-draft: true
+draft: false
+type: page
 ---
 
 # Rekor Command Line Interface
