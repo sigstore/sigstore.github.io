@@ -1,7 +1,8 @@
 ---
 title: "Frequently Asked Questions"
 date: 2020-12-07T17:09:20Z
-draft: true
+draft: false
+type: page
 ---
 
 ### Seems like Rekor is centralised, is this true?
