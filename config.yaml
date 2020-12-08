@@ -2,6 +2,7 @@ baseURL: https://rekor.dev
 languageCode: en-us
 title: Project Rekor
 theme: hugo-fresh
+publishDir: "docs"
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
 # Disables warnings
 disableKinds:
@@ -50,9 +51,13 @@ params:
   navbar:
   - title: OpenAPI spec
     url: /
-#    button: true
+    # button: true
   - title: Get Started
-    url: /get_started/
+    sublinks:
+    - title: Rekor Client
+      url: /get_started/client/
+    - title: Rekor Server
+      url: /get_started/server/
   - title: FAQ
     url: /faq/
   - title: Documentation
