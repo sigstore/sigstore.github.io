@@ -16,6 +16,7 @@ markup:
 # Enable for syntax highlighting
 pygmentsUseClasses: true
 pygmentsCodeFences: true
+disableKinds: ["taxonomy", "taxonomyTerm", "section"]
 
 params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
@@ -33,7 +34,7 @@ params:
     # Main hero title
     title: Project Rekor
     # Hero subtitle (optional)
-    subtitle: Cryptographic, immutable, append only software release ledger tooling
+    subtitle: A Cryptographic, immutable, append only transparency log
     # Button text
     buttontext: Get started
     # Where the main hero button links to
@@ -41,15 +42,15 @@ params:
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)
-    clientlogos:
-    - systek
-    - tribe
-    - kromo
-    - infinite
-    - gutwork
+    # clientlogos:
+    # - systek
+    # - tribe
+    # - kromo
+    # - infinite
+    # - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: OpenAPI spec
+  - title: OpenAPI Spec
     url: /
     # button: true
   - title: Get Started
@@ -60,6 +61,10 @@ params:
       url: /get_started/server/
   - title: FAQ
     url: /faq/
+  - title: News
+    url: /news/
+  - title: Blog
+    url: /blog/
   - title: Documentation
     sublinks:
     - title: Dropdown item
@@ -87,46 +92,46 @@ params:
       text: This is some explanatory text that is on two rows
       url: /
       buttonText: Find out more
-  section2:
-    title: What can rekor provide
-    subtitle:
-    features:
-    - title: Production grade backend
-      text: Rekor uses the certificate transparency project trillian as a cryptographic datastore. Trillian is production hardended software
-      # Icon (from /images/illustrations/icons/___.svg)
-      icon: laptop-globe
-    - title: Mutliple Formats
-      text: Rekor supports many existing formats such as SBOM, In-toto as well as the standard generic rekord type used by projects such as node.js, kernel
-      icon: doc-sync
-    - title: OpenAPI
-      text: We have an openapi, you should use it.
-      icon: mobile-feed
-  # section3:
-  #   title: One platform
-  #   subtitle: To rule them all
-  #   image: illustrations/mockups/app-mockup.png
-  #   buttonText: Get started
-  #   buttonLink: "#"
-  # section4:
-  #   title: Our Clients love us!
-  #   subtitle: Lorem ipsum sit dolor amet is a dummy text used by typography industry
-  #   clients:
-  #   - name: Irma Walters
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: Accountant
-  #     img: 1
-  #   - name: John Bradley
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: Financial Analyst
-  #     img: 2
-  #   - name: Gary Blackman
-  #     quote: Lorem ipsum dolor sit amet, elit deleniti dissentias quo eu, hinc minim appetere te usu, ea case duis scribentur has. Duo te consequat elaboraret, has quando suavitate at.
-  #     job: HR Manager
-  #     img: 3
+  # section2:
+  #   title: What can rekor provide
+  #   subtitle:
+  #   features:
+  #   - title: Production grade backend
+  #     text: Rekor uses the certificate transparency project trillian as a cryptographic datastore. Trillian is production hardended software
+  #     # Icon (from /images/illustrations/icons/___.svg)
+  #     icon: laptop-cloud
+  #   - title: Mutliple Formats
+  #     text: Rekor supports many existing formats such as SBOM, In-toto as well as the standard generic rekord type used by projects such as node.js, kernel
+  #     icon: doc-sync
+  #   - title: OpenAPI
+  #     text: We have an openapi, you should use it.
+  #     icon: mobile-feed
+  section3:
+    title: Use rekor as a service to your application
+    subtitle: Intergrate using our Open API
+    image: illustrations/mockups/app-mockup.png
+    buttonText: Get started
+    buttonLink: "#"
+  section4:
+    title: Our Users love us!
+    subtitle: Projects currently using Rekor
+    clients:
+    - name: Irma Walters
+      quote: As a community rekor has provided a transparent way of logging are software releases of the Acme Framework for our users.
+      job: Developer on
+      img: 1
+    - name: John Bradley
+      quote: We monitor rekor for activities that might suggest someone misusing our namespace or release signing keys.
+      job: Developer, Super Soft LTD
+      img: 2
+    - name: Gary Blackman
+      quote: We run our own internal Rekor instance which has helped us meet the strict compilance needs of our customers.
+      job: Cloud Engineer @ Big Cloud ltd
+      img: 3
   # section5: true
   footer:
     # Logo (from /images/logos/___)
-    logo: fresh-white-alt.svg
+    logo: rekor-logo.png
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
@@ -145,7 +150,7 @@ params:
     bulmalogo: false
     quicklinks:
       column1:
-        title: "Product"
+        title: "Placeholder 1"
         links:
         - text: Discover features
           link: /
@@ -158,7 +163,7 @@ params:
         - text: AGB
           link: /agb
       column2:
-        title: "Docs"
+        title: "Placeholder 2"
         links:
         - text: Get started
           link: /
@@ -169,7 +174,7 @@ params:
         - text: Developers
           link: /
       column3:
-        title: "Blog"
+        title: "Placeholder 3"
         links:
         - text: Latest news
           link: /blog/first

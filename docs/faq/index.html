@@ -4,7 +4,7 @@
     
 
 <meta property="og:title" content="Frequently Asked Questions" />
-<meta property="og:description" content="Seems like Rekor is centralised, is this true?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple sources of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post.  What sort of attacks can Rekor help discover?  Targeted Key theft namespace  Why use a Merkle Tree / Transparency log?" />
+<meta property="og:description" content="Seems like Rekor is centralised, is this true?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple sources of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post.  Why use a Merkle Tree / Transparency log?  Trillian is the back end technology used for certificate transparency Open source community with active development Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt Performance (Handles thousands of requests per second)  Why not use a blockchain?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/faq/" />
 <meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
@@ -51,7 +51,7 @@
 
         <div class="navbar-end">
           <a href="/" class="navbar-item is-secondary">
-            OpenAPI spec
+            OpenAPI Spec
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
@@ -69,6 +69,12 @@
           </div>
           <a href="/faq/" class="navbar-item is-secondary">
             FAQ
+          </a>
+          <a href="/news/" class="navbar-item is-secondary">
+            News
+          </a>
+          <a href="/blog/" class="navbar-item is-secondary">
+            Blog
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
@@ -112,7 +118,7 @@
 
       <div class="navbar-end">
         <a href="/" class="navbar-item is-secondary">
-          OpenAPI spec
+          OpenAPI Spec
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
@@ -130,6 +136,12 @@
         </div>
         <a href="/faq/" class="navbar-item is-secondary">
           FAQ
+        </a>
+        <a href="/news/" class="navbar-item is-secondary">
+          News
+        </a>
+        <a href="/blog/" class="navbar-item is-secondary">
+          Blog
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
@@ -170,12 +182,6 @@
 transparency and this only adds more sources of security guarantees, not less. An entity can
 post to as many logs as they want and inform users of where they post.</li>
 </ul>
-<h3 id="what-sort-of-attacks-can-rekor-help-discover">What sort of attacks can Rekor help discover?</h3>
-<ul>
-<li>Targeted</li>
-<li>Key theft</li>
-<li>namespace</li>
-</ul>
 <h3 id="why-use-a-merkle-tree--transparency-log">Why use a Merkle Tree / Transparency log?</h3>
 <ul>
 <li>Trillian is the back end technology used for  certificate transparency</li>
@@ -185,7 +191,7 @@ post to as many logs as they want and inform users of where they post.</li>
 </ul>
 <h3 id="why-not-use-a-blockchain">Why not use a blockchain?</h3>
 <ul>
-<li>Most public blockchains end up using a centralized gateway for canonicalisation speed and reliability</li>
+<li>Most public blockchains end up using a centralized gateway for canonicalisation, auth, speed and reliability</li>
 <li>Consensus alg’s susceptible to 51% attack (Crash / Byzantine Fault Tolerant)</li>
 <li>Transparency Logs Tried and Tested: Deployed and used at large scale.</li>
 </ul>

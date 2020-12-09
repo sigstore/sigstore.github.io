@@ -3,15 +3,11 @@
   <head>
     
 
-<meta property="og:title" content="Client" />
-<meta property="og:description" content="Rekor Command Line Interface The following guide is targeted towards developers / software maintaieners who would like to make a release entry into the rekor transparency log.
-The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
-Download the Rekor CLI application  download details
-Sign your release Before using rekor, you are required to sign your release." />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/get_started/client/" />
-<meta property="article:published_time" content="2020-12-08T08:06:07+00:00" />
-<meta property="article:modified_time" content="2020-12-08T08:06:07+00:00" />
+<meta property="og:url" content="/get_started/" />
+
 
 
 <meta name="description" content="Hardcoded description; the author should update :)" />
@@ -172,46 +168,14 @@ Sign your release Before using rekor, you are required to sign your release." />
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
-        <h1 class="title section-title">Client</h1>
+        <h1 class="title section-title"></h1>
         <h5 class="subtitle is-5 is-muted"></h5>
         <div class="divider"></div>
       </div>
     </div>
 
     <div class="content">
-      <h1 id="rekor-command-line-interface">Rekor Command Line Interface</h1>
-<p>The following guide is targeted towards developers / software maintaieners who would like to make a release entry into the rekor transparency log.</p>
-<p>The steps outlined below will show how to sign your software and then use the <code>rekor</code> CLI to make and verify an entry.</p>
-<h2 id="download-the-rekor-cli-application">Download the Rekor CLI application</h2>
-<p><TODO> download details</p>
-<h2 id="sign-your-release">Sign your release</h2>
-<p>Before using rekor, you are required to sign your release. For now we use GPG
-(we plant to extend to other signing formats in the foreseeable future)</p>
-<p>You may use either armored or plain binary:</p>
-<pre><code>gpg --armor -u jdoe@example.com --output mysignature.asc --detach-sig myrelease.tar.gz
-</code></pre><p>You will also need to export your public key</p>
-<pre><code>gpg --export --armor &quot;jdoe@example.com&quot; &gt; mypublickey.key
-</code></pre><h2 id="upload-an-entry-rekor">Upload an entry rekor</h2>
-<p>The <code>upload</code> command sends your public key / signature and artifact URL to the rekor transparency log.</p>
-<p>Firstly the rekor command will verify your public key, signature and download
-a local copy of the artifact. It will then validate the artifact signing (no
-access to your private key is required).</p>
-<p>If the validations above pass correctly, the rekor command will construct a JSON
-file containing your signature, public key and the artifact URL. This file will
-be saved locally to your machines home directory (<code>.rekor/</code>). The JSON file will
-then be sent to the server, who will in turn do the same validations, before
-making an entry to the transparency log.</p>
-<pre><code>rekor upload --rekor-server rekor.dev --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact-url &lt;url_to_artifact&gt;
-</code></pre><p>Note that the <code>--artifact-url</code> must be a publically accessable location. For example <code>--artifact-url https://example.com/releases/latest/my_project.tar.gz</code></p>
-<h2 id="verify-proof-of-entry">Verify Proof of Entry</h2>
-<p>The <code>verify</code> command sends your public key / signature and artifcate URL to the rekor transparency log for verification of entry.</p>
-<p>You would typically use this command as a means to  verify an &lsquo;inclusion proof&rsquo;
-in that your artifact is stored within the transparency log.</p>
-<pre><code>rekor verify --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact-url &lt;url_to_artifact&gt;
-</code></pre><ul>
-<li>alternatively you can use a local artifact with <code>--artifact-url</code> path</li>
-</ul>
-
+      
     </div>
   </div>
 </section>
