@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/get_started/</loc>
+    <lastmod>2020-12-08T08:12:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-12-08T08:12:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/get_started/server/</loc>
+    <lastmod>2020-12-08T08:12:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/get_started/client/</loc>
+    <lastmod>2020-12-08T08:06:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/faq/</loc>
+    <lastmod>2020-12-07T17:09:20+00:00</lastmod>
+  </url>
+  
+</urlset>
