@@ -2,6 +2,7 @@
 title: "Frequently Asked Questions"
 date: 2020-12-07T17:09:20Z
 draft: false
+section: single
 type: page
 ---
 
@@ -10,11 +11,6 @@ type: page
    transparency and this only adds more sources of security guarantees, not less. An entity can
    post to as many logs as they want and inform users of where they post.
 
-### What sort of attacks can Rekor help discover?
-* Targeted
-* Key theft
-* namespace
-
 ### Why use a Merkle Tree / Transparency log?
 * Trillian is the back end technology used for  certificate transparency
 * Open source community with active development
@@ -22,6 +18,6 @@ type: page
 * Performance (Handles thousands of requests per second)
 
 ### Why not use a blockchain?
-* Most public blockchains end up using a centralized gateway for canonicalisation speed and reliability
+* Most public blockchains end up using a centralized gateway for canonicalisation, auth, speed and reliability
 * Consensus alg’s susceptible to 51% attack (Crash / Byzantine Fault Tolerant)
 * Transparency Logs Tried and Tested: Deployed and used at large scale.
