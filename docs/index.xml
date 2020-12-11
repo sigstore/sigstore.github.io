@@ -15,6 +15,7 @@
       <guid>/docs/plugable_types/</guid>
       <description>Work in progress, come back soon! </description>
     </item>
+    
     <item>
       <title>Rekor API Client Example</title>
       <link>/docs/api_example/</link>
@@ -56,7 +57,7 @@ Sign your release Before using rekor, you are required to sign your release.</de
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/faq/</guid>
-      <description>Seems like Rekor is centralised?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple points of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post. However, we plan to look to produce a gossip protocol, for those that want a more decentralised model.</description>
+      <description>Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&amp;rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</description>
     </item>
     
     <item>
