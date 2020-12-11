@@ -6,8 +6,17 @@ section: single
 type: page
 ---
 
-
 # Run a rekor server
+
+There are a few ways to deploy a Rekor Server.
+
+We have a [docker-compose](https://github.com/projectrekor/rekor/blob/main/docker-compose.yml) file available
+
+A [kubernetes operator](https://github.com/projectrekor/rekor-operator)
+
+Or you could do this manuall and build rekor yourself.
+
+# Manual Installation
 
 ## Create Database and populate tables
 

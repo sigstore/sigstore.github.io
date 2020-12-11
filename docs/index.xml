@@ -6,25 +6,7 @@
     <description>Recent content on Project Rekor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Dec 2020 12:43:35 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Article</title>
-      <link>/content/blog/article/</link>
-      <pubDate>Wed, 09 Dec 2020 12:43:35 +0000</pubDate>
-      
-      <guid>/content/blog/article/</guid>
-      <description>Some stuff</description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>/blog/</link>
-      <pubDate>Wed, 09 Dec 2020 12:41:11 +0000</pubDate>
-      
-      <guid>/blog/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 08 Dec 2020 08:12:58 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Run a Rekor Server</title>
       <link>/get_started/server/</link>
