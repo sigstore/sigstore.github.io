@@ -4,7 +4,7 @@
     
 
 <meta property="og:title" content="Frequently Asked Questions" />
-<meta property="og:description" content="Seems like Rekor is centralised?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple points of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post. However, we plan to look to produce a gossip protocol, for those that want a more decentralised model." />
+<meta property="og:description" content="Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/faq/" />
 <meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
@@ -18,7 +18,7 @@
     <title>Rekor</title>
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
-<link href="https://fonts.googleapis.com/css?family=Catamaran:800000" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/style.min.f8746099fa9580878ac8821d7955609e754fcc0e51b89057b1b14a3787c4a353.css" integrity="sha256-&#43;HRgmfqVgIeKyIIdeVVgnnVPzA5RuJBXsbFKN4fEo1M=">
 <link rel="stylesheet" type="text/css" href="/css/icons.css">
 
@@ -166,26 +166,23 @@
     <div class="content">
       <h3 id="seems-like-rekor-is-centralised">Seems like Rekor is centralised?</h3>
 <ul>
-<li>Yes, and why not? There is no need for a distributed source of transparency. There can be multiple points of
-transparency and this only adds more sources of security guarantees, not less. An entity can
-post to as many logs as they want and inform users of where they post. However, we plan to look to produce a gossip protocol, for those that want a more decentralised model.</li>
+<li>Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</li>
 </ul>
 <h3 id="why-not-use-a-blockchain">Why not use a blockchain?</h3>
 <ul>
-<li>We far from anti-blockchain, but feel its not the most best fit for Rekors needs..</li>
-<li>Most public blockchains end up using a centralized gateway for canonicalisation, auth etc.</li>
+<li>Public blockchains often end up using a centralized entry point for canonicalisation, auth etc</li>
 <li>Consensus alg’s can be susceptible to 51% attack (Crash / Byzantine Fault Tolerant)</li>
+<li>We are far from anti-blockchain, but feel its not the most best fit for Rekors needs at present</li>
 </ul>
 <h3 id="why-use-a-merkle-tree--transparency-log">Why use a Merkle Tree / Transparency log?</h3>
 <ul>
-<li>Trillian is the back end technology used for  certificate transparency</li>
-<li>Open source community with active development</li>
-<li>Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt</li>
-<li>Performance (Handles thousands of requests per second)</li>
+<li>Rekors backed is use <a href="https://github.com/google/trillian">Trillian</a></li>
+<li>Trillian is an Open source community under active development</li>
+<li>Trilian is Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt for cerficate transparency, so it already is considered production grade.</li>
 </ul>
 <h3 id="can-i-get-rekor-to-work-with-my-x-format--framework-standard">Can I get Rekor to work with my X format , framework standard?</h3>
 <ul>
-<li>Yes, using pluggable types you can create your own manifest layout and send it to rekor. Head over to plugable types</li>
+<li>Yes, using pluggable types you can create your own manifest layout and send it to rekor. Head over to <a href="/docs/plugable_types/">plugable types</a></li>
 </ul>
 
     </div>
