@@ -29,7 +29,7 @@ params:
     link: /
   font:
     name: "Catamaran"
-    sizes: [800000]
+    sizes: [400,600]
   hero:
     # Main hero title
     title: Project Rekor
@@ -65,32 +65,32 @@ params:
     sublinks:
     - title: Create a Rekor Service
       url: /docs/api_example/
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
+    - title: Plugable types
+      url: /docs/plugable_types/
+    # - title: Dropdown item
+    #   url: /
   - title: FAQ
     url: /faq/
-  section1:
-    title: Current Users of Rekor
-    subtitle: example projects
-    tiles:
-    - title: Acme Project
-      icon: mouse-globe
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Find out more
-    - title: Another Project
-      icon: laptop-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Find out more
-    - title: Add-ons & plugins
-      icon: plug-cloud
-      text: This is some explanatory text that is on two rows
-      url: /
-      buttonText: Find out more
-  # section2:
+  # section1:
+  #   title: Current Users of Rekor
+  #   subtitle: example projects
+  #   tiles:
+  #   - title: Acme Project
+  #     icon: mouse-globe
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Find out more
+  #   - title: Another Project
+  #     icon: laptop-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Find out more
+  #   - title: Add-ons & plugins
+  #     icon: plug-cloud
+  #     text: This is some explanatory text that is on two rows
+  #     url: /
+  #     buttonText: Find out more
+  # # section2:
   #   title: What can rekor provide
   #   subtitle:
   #   features:
@@ -105,76 +105,76 @@ params:
   #     text: We have an openapi, you should use it.
   #     icon: mobile-feed
   section3:
-    title: Use rekor as a service to your application
-    subtitle: Intergrate using our Open API
+    title: Integrate with Rekors API's
+    subtitle: Learn how to use Rekor as part of your app eco-system
     image: illustrations/mockups/app-mockup.png
-    buttonText: Get started
-    buttonLink: "#"
+    buttonText: Learn More
+    buttonLink: "/get_started/"
   section4:
-    title: Our Users love us!
-    subtitle: Projects currently using Rekor
+    title: Current users of Rekor
+    subtitle: User testimonials
     clients:
     - name: Irma Walters
       quote: As a community rekor has provided a transparent way of logging are software releases of the Acme Framework for our users.
-      job: Developer on
+      job: OSS project, Maintainer
       img: 1
     - name: John Bradley
       quote: We monitor rekor for activities that might suggest someone misusing our namespace or release signing keys.
-      job: Developer, Super Soft LTD
+      job: Developer, Super Security LTD
       img: 2
     - name: Gary Blackman
       quote: We run our own internal Rekor instance which has helped us meet the strict compilance needs of our customers.
-      job: Cloud Engineer @ Big Cloud ltd
+      job: Cloud Engineer @ Big Cloud Inc
       img: 3
   # section5: true
-  footer:
-    # Logo (from /images/logos/___)
-    logo: rekor-logo.png
-    # Social Media Title
-    socialmediatitle: Follow Us
-    # Social media links (GitHub, Twitter, etc.). All are optional.
-    socialmedia:
-    - link: https://github.com/projectrekor
-      # Icons are from Font Awesome
-      icon: github
-    # - link: https://dribbble.com/#
-    #   icon: dribbble
-    # - link: https://facebook.com/#
-    #   icon: facebook
-    - link: #
-      icon: twitter
-    # - link: https://bitbucket.org/#
-    #   icon: bitbucket
-    bulmalogo: false
-    quicklinks:
-      column1:
-        title: "Placeholder 1"
-        links:
-        - text: Discover features
-          link: /
-        - text: Why choose our product?
-          link: /
-        - text: Compare features
-          link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
-      column2:
-        title: "Placeholder 2"
-        links:
-        - text: Get started
-          link: /
-        - text: User guides
-          link: /
-        - text: Admin guide
-          link: /
-        - text: Developers
-          link: /
-      column3:
-        title: "Placeholder 3"
-        links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+  # footer:
+  #   # Logo (from /images/logos/___)
+  #   logo: rekor-logo.png
+  #   # Social Media Title
+  #   socialmediatitle: Follow Us
+  #   # Social media links (GitHub, Twitter, etc.). All are optional.
+  #   socialmedia:
+  #   - link: https://github.com/projectrekor
+  #     # Icons are from Font Awesome
+  #     icon: github
+  #   # - link: https://dribbble.com/#
+  #   #   icon: dribbble
+  #   # - link: https://facebook.com/#
+  #   #   icon: facebook
+  #   - link: #
+  #     icon: twitter
+  #   # - link: https://bitbucket.org/#
+  #   #   icon: bitbucket
+  #   bulmalogo: false
+  #   quicklinks:
+  #     column1:
+  #       title: "Placeholder 1"
+  #       links:
+  #       - text: Discover features
+  #         link: /
+  #       - text: Why choose our product?
+  #         link: /
+  #       - text: Compare features
+  #         link: /
+  #       - text: Our roadmap
+  #         link: /
+  #       - text: AGB
+  #         link: /agb
+  #     column2:
+  #       title: "Placeholder 2"
+  #       links:
+  #       - text: Get started
+  #         link: /
+  #       - text: User guides
+  #         link: /
+  #       - text: Admin guide
+  #         link: /
+  #       - text: Developers
+  #         link: /
+  #     column3:
+  #       title: "Placeholder 3"
+  #       links:
+  #       - text: Latest news
+  #         link: /blog/first
+  #       - text: Tech articles
+  #         link: /blog/second
