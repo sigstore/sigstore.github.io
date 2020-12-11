@@ -8,7 +8,7 @@ type: page
 
 # Rekor Command Line Interface
 
-The following guide is targeted towards developers / software maintaieners who would like to make a release entry into the rekor transparency log.
+The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 
 The steps outlined below will show how to sign your software and then use the `rekor` CLI to make and verify an entry.
 
