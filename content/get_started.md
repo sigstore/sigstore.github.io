@@ -69,15 +69,15 @@ These are all just a few examples of who can use and benefit from Rekor. We are 
 
 #### Use Rekor as a store
 
-If you're someone who wants to sign and store your own releases into Rekor, head over to the [Rekor Users section](http://localhost:1313/get_started/client/)
+If you're someone who wants to sign and store your own releases into Rekor, head over to the [Rekor Users section](/get_started/client/)
 
 #### Deploy your own Rekor Server
 
-If you want to host your own Rekor transparency service, head over to the [Rekor Server section](http://localhost:1313/get_started/server/)
+If you want to host your own Rekor transparency service, head over to the [Rekor Server section](/get_started/server/)
 
 #### Integrate with Rekor
 
-If you want to develop your own application that makes use of Rekors APIs, head over to the [Rekor API Client Example](http://localhost:1313/get_started/api_client/)
+If you want to develop your own application that makes use of Rekors APIs, head over to the [Rekor API Client Example](/get_started/api_client/)
 
 ## Need help?
 
