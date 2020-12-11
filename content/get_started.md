@@ -55,13 +55,13 @@ Attestation solutions can attest / measure deployed artefacts and utilise Rekor 
 ###  Security Researchers
 Rekors provenance can be quiered to discover behaivor patterns, for example namespaces being signed by certain keys that do not typically sign a certain projects release.
 
-### \<Insert your use case here\>
-
-Rekor is very flexible and allow you to create your own manifest layout. So you can use Rekor to capture your own data sets in a tamper resistant enviroment.
-
 ### Security Analytics Site
 
 Rekor data can be gathered, indexed and stored allowing the render of data into meaningful graphs.
+
+### \<Insert your use case here\>
+
+Rekor is very flexible and allow you to create your own manifest layout. So you can use Rekor to capture your own data sets in a tamper resistant enviroment.
 
 These are all just a few examples of who can use and benefit from Rekor. We are always curious to hear new ideas and help shape those into an implementation.
 
