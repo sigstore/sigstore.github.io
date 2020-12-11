@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-title: Project Rekor
+title: Rekor
 theme: hugo-fresh
 publishDir: "docs"
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
@@ -29,16 +29,16 @@ params:
     link: /
   font:
     name: "Catamaran"
-    sizes: [400,600]
+    sizes: [800000]
   hero:
     # Main hero title
     title: Project Rekor
     # Hero subtitle (optional)
     subtitle: A Cryptographic, immutable, append only transparency log
     # Button text
-    buttontext: Get started
+    buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "/get_started/client/"
+    buttonlink: "/get_started/"
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -50,6 +50,8 @@ params:
     # - gutwork
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
+  - title: Community
+    url: https://github.com/projectrekor
   - title: OpenAPI Spec
     url: /
     # button: true
@@ -59,20 +61,16 @@ params:
       url: /get_started/client/
     - title: Rekor Server
       url: /get_started/server/
-  - title: FAQ
-    url: /faq/
-  - title: News
-    url: /news/
-  - title: Blog
-    url: /blog/
   - title: Documentation
     sublinks:
+    - title: Create a Rekor Service
+      url: /docs/api_example/
     - title: Dropdown item
       url: /
     - title: Dropdown item
       url: /
-    - title: Dropdown item
-      url: /
+  - title: FAQ
+    url: /faq/
   section1:
     title: Current Users of Rekor
     subtitle: example projects
