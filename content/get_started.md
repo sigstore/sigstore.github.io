@@ -44,16 +44,16 @@ Rekor can be leveraged by the following actors:
 ![Example image](/images/arch.png)
 
 ### Software Maintainers
-A software maintainer can use Rekor to store the signed digest of an artifact. This would in turn help prevent an attack replacing a digest with the digest of a tampered release. An example of this sort of attack occured to Linux Mint [when there website was hacked](https://blog.linuxmint.com/?p=2994). We have seen a lot of projects storing hashes as a means of provenance for their users on insecure mutable platforms such as README.md files on a git hosted repository. All that is needed is someones account is comprised, they amend the README.md and self merge and the damage is done.
+A software maintainer can use Rekor to store the signed digest of an artifact. This would in turn help prevent an attack replacing a digest with the digest of a tampered release. An example of this sort of attack occured to Linux Mint [when their website was hacked](https://blog.linuxmint.com/?p=2994). We have seen a lot of projects storing hashes as a means of provenance for their users on insecure mutable platforms such as README.md files on a git hosted repository. All that is needed is someone's account is compromised, they amend the README.md and self merge and the damage is done.
 
 ### Software packaging systems
 Software packaging systems can harness Rekor to ensure users are not undergoing a targeted attack. Rekor can provide context to the effect of "What I am seeing, it what everyone else is seeing".
 
 ### Attestation solutions
-Attestation solutions can attest / measure deployed artefacts and utilise Rekor as a means of measurements store.
+Attestation solutions can attest / measure deployed artefacts and utilise Rekor as a means of measurement store.
 
 ###  Security Researchers
-Rekors provenance can be quiered to discover behaivor patterns, for example namespaces being signed by certain keys that do not typically sign a certain projects release.
+Rekors provenance can be queried to discover behavior patterns, for example namespaces being signed by certain keys that do not typically sign a certain project's release.
 
 ### Security Analytics Site
 
@@ -61,7 +61,7 @@ Rekor data can be gathered, indexed and stored allowing the render of data into 
 
 ### \<Insert your use case here\>
 
-Rekor is very flexible and allow you to create your own manifest layout. So you can use Rekor to capture your own data sets in a tamper resistant enviroment.
+Rekor is very flexible and allows you to create your own manifest layout. So you can use Rekor to capture your own data sets in a tamper resistant environment.
 
 These are all just a few examples of who can use and benefit from Rekor. We are always curious to hear new ideas and help shape those into an implementation.
 
@@ -81,4 +81,4 @@ If you want to develop your own application that makes use of Rekors APIs, head 
 
 ## Need help?
 
-Come on over to our slack channel!
+Come on over to our slack channel! https://projectrekor.slack.com
