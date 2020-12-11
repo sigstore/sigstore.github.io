@@ -1,21 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Project Rekor</title>
+    <title>Rekor</title>
     <link>/</link>
-    <description>Recent content on Project Rekor</description>
+    <description>Recent content on Rekor</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Dec 2020 08:12:58 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Dec 2020 12:07:22 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Plugable Types</title>
+      <link>/docs/plugable_types/</link>
+      <pubDate>Fri, 11 Dec 2020 12:07:22 +0000</pubDate>
+      
+      <guid>/docs/plugable_types/</guid>
+      <description>Work in progress, come back soon! </description>
+    </item>
+    
+    <item>
+      <title>Rekor API Client Example</title>
+      <link>/docs/api_example/</link>
+      <pubDate>Fri, 11 Dec 2020 10:09:51 +0000</pubDate>
+      
+      <guid>/docs/api_example/</guid>
+      <description>We also use OpenAPI specification in rekor making it easy to bootstrap your own RestFul API client.
+If you&amp;rsquo;re interested in developing an application that can store or retrive entries into a Rekor transparency log, we recommend you take a look at the examples repository. In here you will find an example that downloads and stores the entire node.js signed release archive. It then monitors for new releases and automatically sends the signing artifacts to a rekor server.</description>
+    </item>
+    
     <item>
       <title>Run a Rekor Server</title>
       <link>/get_started/server/</link>
       <pubDate>Tue, 08 Dec 2020 08:12:58 +0000</pubDate>
       
       <guid>/get_started/server/</guid>
-      <description>Run a rekor server Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.
-Build Trillian To run rekor you need to build trillian
-go get github.com/google/trillian.git go build ./cmd/trillian_log_server go build ./cmd/trillian_log_signer Start the tlog server trillian_log_server -http_endpoint=localhost:8090 -rpc_endpoint=localhost:8091 --logtostderr .</description>
+      <description>Run a rekor server There are a few ways to deploy a Rekor Server.
+We have a docker-compose file available
+A kubernetes operator
+Or you could do this manuall and build rekor yourself.
+Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.</description>
     </item>
     
     <item>
@@ -24,7 +45,7 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
       <pubDate>Tue, 08 Dec 2020 08:06:07 +0000</pubDate>
       
       <guid>/get_started/client/</guid>
-      <description>Rekor Command Line Interface The following guide is targeted towards developers / software maintaieners who would like to make a release entry into the rekor transparency log.
+      <description>Rekor Command Line Interface The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
 Download the Rekor CLI application  download details
 Sign your release Before using rekor, you are required to sign your release.</description>
@@ -36,16 +57,27 @@ Sign your release Before using rekor, you are required to sign your release.</de
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/faq/</guid>
-      <description>Seems like Rekor is centralised, is this true?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple sources of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post.  Why use a Merkle Tree / Transparency log?  Trillian is the back end technology used for certificate transparency Open source community with active development Deployed by Google, CloudFlare (nimbus), Let&amp;rsquo;s Encrypt Performance (Handles thousands of requests per second)  Why not use a blockchain?</description>
+      <description>Seems like Rekor is centralised?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple points of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post. However, we plan to look to produce a gossip protocol, for those that want a more decentralised model.</description>
     </item>
     
     <item>
-      <title></title>
+      <title>Rekor introduction</title>
+      <link>/docs/</link>
+      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
+      
+      <guid>/docs/</guid>
+      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
+This makes rekor particularly conducive for the transparency for software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by others for ‘inclusion’ and tamper free state.</description>
+    </item>
+    
+    <item>
+      <title>Rekor introduction</title>
       <link>/get_started/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/get_started/</guid>
-      <description></description>
+      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
+This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</description>
     </item>
     
   </channel>
