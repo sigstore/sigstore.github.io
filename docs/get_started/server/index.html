@@ -4,9 +4,11 @@
     
 
 <meta property="og:title" content="Run a Rekor Server" />
-<meta property="og:description" content="Run a rekor server Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.
-Build Trillian To run rekor you need to build trillian
-go get github.com/google/trillian.git go build ./cmd/trillian_log_server go build ./cmd/trillian_log_signer Start the tlog server trillian_log_server -http_endpoint=localhost:8090 -rpc_endpoint=localhost:8091 --logtostderr ." />
+<meta property="og:description" content="Run a rekor server There are a few ways to deploy a Rekor Server.
+We have a docker-compose file available
+A kubernetes operator
+Or you could do this manuall and build rekor yourself.
+Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/get_started/server/" />
 <meta property="article:published_time" content="2020-12-08T08:12:58+00:00" />
@@ -17,10 +19,10 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Project Rekor</title>
+    <title>Rekor</title>
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
-<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:800000" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/style.min.f8746099fa9580878ac8821d7955609e754fcc0e51b89057b1b14a3787c4a353.css" integrity="sha256-&#43;HRgmfqVgIeKyIIdeVVgnnVPzA5RuJBXsbFKN4fEo1M=">
 <link rel="stylesheet" type="text/css" href="/css/icons.css">
 
@@ -52,6 +54,9 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
       <div id="navbar-menu" class="navbar-menu is-static">
 
         <div class="navbar-end">
+          <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+            Community
+          </a>
           <a href="/" class="navbar-item is-secondary">
             OpenAPI Spec
           </a>
@@ -69,23 +74,14 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
               </a>
             </div>
           </div>
-          <a href="/faq/" class="navbar-item is-secondary">
-            FAQ
-          </a>
-          <a href="/news/" class="navbar-item is-secondary">
-            News
-          </a>
-          <a href="/blog/" class="navbar-item is-secondary">
-            Blog
-          </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               Documentation
             </a>
 
             <div class="navbar-dropdown">
-              <a href="/" class="navbar-item">
-                Dropdown item
+              <a href="/docs/api_example/" class="navbar-item">
+                Create a Rekor Service
               </a>
               <a href="/" class="navbar-item">
                 Dropdown item
@@ -95,6 +91,9 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
               </a>
             </div>
           </div>
+          <a href="/faq/" class="navbar-item is-secondary">
+            FAQ
+          </a>
         </div>
       </div>
   </div>
@@ -119,6 +118,9 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
     <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
 
       <div class="navbar-end">
+        <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+          Community
+        </a>
         <a href="/" class="navbar-item is-secondary">
           OpenAPI Spec
         </a>
@@ -136,23 +138,14 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
             </a>
           </div>
         </div>
-        <a href="/faq/" class="navbar-item is-secondary">
-          FAQ
-        </a>
-        <a href="/news/" class="navbar-item is-secondary">
-          News
-        </a>
-        <a href="/blog/" class="navbar-item is-secondary">
-          Blog
-        </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             Documentation
           </a>
 
           <div class="navbar-dropdown">
-            <a href="/" class="navbar-item">
-              Dropdown item
+            <a href="/docs/api_example/" class="navbar-item">
+              Create a Rekor Service
             </a>
             <a href="/" class="navbar-item">
               Dropdown item
@@ -162,6 +155,9 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
             </a>
           </div>
         </div>
+        <a href="/faq/" class="navbar-item is-secondary">
+          FAQ
+        </a>
       </div>
     </div>
 </div>
@@ -179,6 +175,11 @@ go get github.com/google/trillian.git go build ./cmd/trillian_log_server go buil
 
     <div class="content">
       <h1 id="run-a-rekor-server">Run a rekor server</h1>
+<p>There are a few ways to deploy a Rekor Server.</p>
+<p>We have a <a href="https://github.com/projectrekor/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</p>
+<p>A <a href="https://github.com/projectrekor/rekor-operator">kubernetes operator</a></p>
+<p>Or you could do this manuall and build rekor yourself.</p>
+<h1 id="manual-installation">Manual Installation</h1>
 <h2 id="create-database-and-populate-tables">Create Database and populate tables</h2>
 <p>Trillian requires a database, we use MariaDB for now (others to be explored later). Once this
 is installed on your machine edit the <code>scripts/createdb.sh</code> with your database root account credentials and run the script.</p>
