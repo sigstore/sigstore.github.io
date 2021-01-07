@@ -53,7 +53,7 @@ params:
   - title: Community
     url: https://github.com/projectrekor
   - title: OpenAPI Spec
-    url: /
+    url: /swagger
     # button: true
   - title: Get Started
     sublinks:
