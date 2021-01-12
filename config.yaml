@@ -38,7 +38,7 @@ params:
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "/get_started/"
+    buttonlink: "/what_is_rekor/"
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)

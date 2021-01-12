@@ -83,10 +83,10 @@ This makes rekor particularly conducive for the transparency for software supply
     
     <item>
       <title>Rekor introduction</title>
-      <link>/get_started/</link>
+      <link>/what_is_rekor/</link>
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
-      <guid>/get_started/</guid>
+      <guid>/what_is_rekor/</guid>
       <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
 This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</description>
     </item>
