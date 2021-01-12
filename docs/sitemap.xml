@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/rekor_directory/</loc>
+    <lastmod>2021-01-12T13:46:19+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/docs/plugable_types/</loc>
     <lastmod>2020-12-11T12:07:22+00:00</lastmod>
   </url>

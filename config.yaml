@@ -63,12 +63,12 @@ params:
       url: /get_started/server/
   - title: Documentation
     sublinks:
-    - title: Create a Rekor Service
+    - title: Develop a Rekor API Client
       url: /docs/api_example/
     - title: Plugable types
       url: /docs/plugable_types/
-    # - title: Dropdown item
-    #   url: /
+  - title: Rekor Directory
+    url: /rekor_directory
   - title: FAQ
     url: /faq/
   # section1:

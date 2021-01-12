@@ -8,12 +8,22 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Dec 2020 12:07:22 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Rekor_directory</title>
+      <link>/rekor_directory/</link>
+      <pubDate>Tue, 12 Jan 2021 13:46:19 +0000</pubDate>
+      
+      <guid>/rekor_directory/</guid>
+      <description>Hey </description>
+    </item>
+    
+    <item>
       <title>Plugable Types</title>
       <link>/docs/plugable_types/</link>
       <pubDate>Fri, 11 Dec 2020 12:07:22 +0000</pubDate>
       
       <guid>/docs/plugable_types/</guid>
-      <description>Work in progress, come back soon! </description>
+      <description>Description Rekor supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop your own manifest type in your prefered formatting style (json|yaml|xml).
+Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base Schema The base schema for all types is modeled off of the schema used by Kubernetes and can be found in openapi.yaml as #/definitions/ProposedEntry:</description>
     </item>
     
     <item>
@@ -22,8 +32,8 @@
       <pubDate>Fri, 11 Dec 2020 10:09:51 +0000</pubDate>
       
       <guid>/docs/api_example/</guid>
-      <description>We also use OpenAPI specification in rekor making it easy to bootstrap your own RestFul API client.
-If you&amp;rsquo;re interested in developing an application that can store or retrive entries into a Rekor transparency log, we recommend you take a look at the examples repository. In here you will find an example that downloads and stores the entire node.js signed release archive. It then monitors for new releases and automatically sends the signing artifacts to a rekor server.</description>
+      <description>We use the OpenAPI specification in rekor making it easy to create your own RestFul API client.
+If you&amp;rsquo;re interested in developing an application that can store or retrive entries into a Rekor transparency log, we recommend you take a look at the swagger online editor.</description>
     </item>
     
     <item>
