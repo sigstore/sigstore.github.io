@@ -15,7 +15,7 @@ type: page
 * We are far from anti-blockchain, but feel its not the most best fit for Rekors needs at present
 
 ### Why use a Merkle Tree / Transparency log?
-* Rekors backed is use [Trillian](https://github.com/google/trillian)
+* Rekors back end is [Trillian](https://github.com/google/trillian)
 * Trillian is an Open source community under active development
 * Trilian is Deployed by Google, CloudFlare (nimbus), Let's Encrypt for cerficate transparency, so it already is considered production grade.
 
