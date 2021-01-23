@@ -185,32 +185,43 @@ Sign your release Before using rekor, you are required to sign your release." />
 <h2 id="download-the-rekor-cli-application">Download the Rekor CLI application</h2>
 <p><TODO> download details</p>
 <h2 id="sign-your-release">Sign your release</h2>
-<p>Before using rekor, you are required to sign your release. For now we use GPG
-(we plant to extend to other signing formats in the foreseeable future)</p>
+<p>Before using rekor, you are required to sign your release. The following example illustrates
+GPG.</p>
 <p>You may use either armored or plain binary:</p>
 <pre><code>gpg --armor -u jdoe@example.com --output mysignature.asc --detach-sig myrelease.tar.gz
 </code></pre><p>You will also need to export your public key</p>
 <pre><code>gpg --export --armor &quot;jdoe@example.com&quot; &gt; mypublickey.key
 </code></pre><h2 id="upload-an-entry-rekor">Upload an entry rekor</h2>
 <p>The <code>upload</code> command sends your public key / signature and artifact URL to the rekor transparency log.</p>
-<p>Firstly the rekor command will verify your public key, signature and download
+<pre><code>rekor upload --rekor_server api.rekor.dev --signature &lt;artifact_signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;
+</code></pre><p>Firstly the rekor command will verify your public key, signature and download
 a local copy of the artifact. It will then validate the artifact signing (no
 access to your private key is required).</p>
-<p>If the validations above pass correctly, the rekor command will construct a JSON
-file containing your signature, public key and the artifact URL. This file will
-be saved locally to your machines home directory (<code>.rekor/</code>). The JSON file will
-then be sent to the server, who will in turn do the same validations, before
-making an entry to the transparency log.</p>
-<pre><code>rekor upload --rekor-server rekor.dev --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact-url &lt;url_to_artifact&gt;
-</code></pre><p>Note that the <code>--artifact-url</code> must be a publically accessable location. For example <code>--artifact-url https://example.com/releases/latest/my_project.tar.gz</code></p>
+<p>If the validations above pass correctly, the entry will be made to rekor and an entry URL will be returned.</p>
+<pre><code>Created entry at: https://api.rekor.dev/api/v1/log/entries/b08416d417acdb0610d4a030d8f697f9d0a718024681a00fa0b9ba67072a38b5
+</code></pre><p>This is contains the UUID entry / merkle tree hash (in the above case <code>b08416d417acdb0610d4a030d8f697f9d0a718024681a00fa0b9ba67072a38b5</code>)</p>
+<p>Within here is again the UUID and the body of the entry</p>
 <h2 id="verify-proof-of-entry">Verify Proof of Entry</h2>
-<p>The <code>verify</code> command sends your public key / signature and artifcate URL to the rekor transparency log for verification of entry.</p>
+<p>The <code>verify</code> command allows you to send a public key / signature and artifcate to the rekor transparency log for verification of entry.</p>
 <p>You would typically use this command as a means to  verify an &lsquo;inclusion proof&rsquo;
 in that your artifact is stored within the transparency log.</p>
-<pre><code>rekor verify --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact-url &lt;url_to_artifact&gt;
+<pre><code>rekor verify --rekor-server &lt;rekor_url&gt; --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;|&lt;local_path_artifact&gt;
 </code></pre><ul>
-<li>alternatively you can use a local artifact with <code>--artifact-url</code> path</li>
+<li>alternatively you can use a local artifact with <code>--artifact</code> path</li>
 </ul>
+<h2 id="get-entry">Get Entry</h2>
+<p>An entry in the log can be retrieved by using either the log index or the artifact uuid:</p>
+<p>This can be performed with the log index, or the UUID</p>
+<pre><code>rekor get --rekor-server api.rekor.dev --log-index &lt;log-index&gt;
+</code></pre><pre><code>rekor get --rekor-server api.rekor.dev --uuid &lt;uuid&gt;
+</code></pre><h2 id="log-info">Log Info</h2>
+<p>The log info command retrieves the public key of the transparency log (unless already declared within the client <code>~/.rekor/rekor.yaml</code>)
+and then uses the public key to verify the signing of the signed tree head.</p>
+<p><code>rekor loginfo --rekor-server api.rekor.dev</code></p>
+<h2 id="search">Search</h2>
+<p>If running a redis instance within rekor, the search command performs a redis lookup using a file or a public key</p>
+<p>This command requires one of a artifact, a public key of a sha.</p>
+<p><code>rekor search --rekor-server api.rekor.dev --</code></p>
 
     </div>
   </div>
