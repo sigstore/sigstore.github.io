@@ -4,7 +4,7 @@
     
 
 <meta property="og:title" content="Frequently Asked Questions" />
-<meta property="og:description" content="Seems like Rekor is centralised, is this true?  Yes, and why not? There is no need for a distributed source of transparency. There can be multiple sources of transparency and this only adds more sources of security guarantees, not less. An entity can post to as many logs as they want and inform users of where they post.  Why use a Merkle Tree / Transparency log?  Trillian is the back end technology used for certificate transparency Open source community with active development Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt Performance (Handles thousands of requests per second)  Why not use a blockchain?" />
+<meta property="og:description" content="Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/faq/" />
 <meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
@@ -15,7 +15,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Project Rekor</title>
+    <title>Rekor</title>
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
@@ -50,7 +50,10 @@
       <div id="navbar-menu" class="navbar-menu is-static">
 
         <div class="navbar-end">
-          <a href="/" class="navbar-item is-secondary">
+          <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+            Community
+          </a>
+          <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
             OpenAPI Spec
           </a>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -67,32 +70,26 @@
               </a>
             </div>
           </div>
-          <a href="/faq/" class="navbar-item is-secondary">
-            FAQ
-          </a>
-          <a href="/news/" class="navbar-item is-secondary">
-            News
-          </a>
-          <a href="/blog/" class="navbar-item is-secondary">
-            Blog
-          </a>
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">
               Documentation
             </a>
 
             <div class="navbar-dropdown">
-              <a href="/" class="navbar-item">
-                Dropdown item
+              <a href="/docs/api_example/" class="navbar-item">
+                Develop a Rekor API Client
               </a>
-              <a href="/" class="navbar-item">
-                Dropdown item
-              </a>
-              <a href="/" class="navbar-item">
-                Dropdown item
+              <a href="/docs/plugable_types/" class="navbar-item">
+                Plugable types
               </a>
             </div>
           </div>
+          <a href="/rekor_directory" class="navbar-item is-secondary">
+            Rekor Directory
+          </a>
+          <a href="/faq/" class="navbar-item is-secondary">
+            FAQ
+          </a>
         </div>
       </div>
   </div>
@@ -117,7 +114,10 @@
     <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
 
       <div class="navbar-end">
-        <a href="/" class="navbar-item is-secondary">
+        <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
           OpenAPI Spec
         </a>
         <div class="navbar-item has-dropdown is-hoverable">
@@ -134,32 +134,26 @@
             </a>
           </div>
         </div>
-        <a href="/faq/" class="navbar-item is-secondary">
-          FAQ
-        </a>
-        <a href="/news/" class="navbar-item is-secondary">
-          News
-        </a>
-        <a href="/blog/" class="navbar-item is-secondary">
-          Blog
-        </a>
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link">
             Documentation
           </a>
 
           <div class="navbar-dropdown">
-            <a href="/" class="navbar-item">
-              Dropdown item
+            <a href="/docs/api_example/" class="navbar-item">
+              Develop a Rekor API Client
             </a>
-            <a href="/" class="navbar-item">
-              Dropdown item
-            </a>
-            <a href="/" class="navbar-item">
-              Dropdown item
+            <a href="/docs/plugable_types/" class="navbar-item">
+              Plugable types
             </a>
           </div>
         </div>
+        <a href="/rekor_directory" class="navbar-item is-secondary">
+          Rekor Directory
+        </a>
+        <a href="/faq/" class="navbar-item is-secondary">
+          FAQ
+        </a>
       </div>
     </div>
 </div>
@@ -176,24 +170,25 @@
     </div>
 
     <div class="content">
-      <h3 id="seems-like-rekor-is-centralised-is-this-true">Seems like Rekor is centralised, is this true?</h3>
+      <h3 id="seems-like-rekor-is-centralised">Seems like Rekor is centralised?</h3>
 <ul>
-<li>Yes, and why not? There is no need for a distributed source of transparency. There can be multiple sources of
-transparency and this only adds more sources of security guarantees, not less. An entity can
-post to as many logs as they want and inform users of where they post.</li>
-</ul>
-<h3 id="why-use-a-merkle-tree--transparency-log">Why use a Merkle Tree / Transparency log?</h3>
-<ul>
-<li>Trillian is the back end technology used for  certificate transparency</li>
-<li>Open source community with active development</li>
-<li>Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt</li>
-<li>Performance (Handles thousands of requests per second)</li>
+<li>Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</li>
 </ul>
 <h3 id="why-not-use-a-blockchain">Why not use a blockchain?</h3>
 <ul>
-<li>Most public blockchains end up using a centralized gateway for canonicalisation, auth, speed and reliability</li>
-<li>Consensus alg’s susceptible to 51% attack (Crash / Byzantine Fault Tolerant)</li>
-<li>Transparency Logs Tried and Tested: Deployed and used at large scale.</li>
+<li>Public blockchains often end up using a centralized entry point for canonicalisation, auth etc</li>
+<li>Consensus alg’s can be susceptible to 51% attack (Crash / Byzantine Fault Tolerant)</li>
+<li>We are far from anti-blockchain, but feel its not the most best fit for Rekors needs at present</li>
+</ul>
+<h3 id="why-use-a-merkle-tree--transparency-log">Why use a Merkle Tree / Transparency log?</h3>
+<ul>
+<li>Rekors back end is <a href="https://github.com/google/trillian">Trillian</a></li>
+<li>Trillian is an Open source community under active development</li>
+<li>Trilian is Deployed by Google, CloudFlare (nimbus), Let&rsquo;s Encrypt for cerficate transparency, so it already is considered production grade.</li>
+</ul>
+<h3 id="can-i-get-rekor-to-work-with-my-x-format--framework-standard">Can I get Rekor to work with my X format , framework standard?</h3>
+<ul>
+<li>Yes, using pluggable types you can create your own manifest layout and send it to rekor. Head over to <a href="/docs/plugable_types/">plugable types</a></li>
 </ul>
 
     </div>

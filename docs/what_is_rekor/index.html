@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+
+<meta property="og:title" content="Rekor introduction" />
+<meta property="og:description" content="What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
+This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/what_is_rekor/" />
+<meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
+<meta property="article:modified_time" content="2020-12-07T17:09:20+00:00" />
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rekor</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.f8746099fa9580878ac8821d7955609e754fcc0e51b89057b1b14a3787c4a353.css" integrity="sha256-&#43;HRgmfqVgIeKyIIdeVVgnnVPzA5RuJBXsbFKN4fEo1M=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/rekor-logo.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+            Community
+          </a>
+          <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
+            OpenAPI Spec
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Get Started
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/get_started/client/" class="navbar-item">
+                Rekor Client
+              </a>
+              <a href="/get_started/server/" class="navbar-item">
+                Rekor Server
+              </a>
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Documentation
+            </a>
+
+            <div class="navbar-dropdown">
+              <a href="/docs/api_example/" class="navbar-item">
+                Develop a Rekor API Client
+              </a>
+              <a href="/docs/plugable_types/" class="navbar-item">
+                Plugable types
+              </a>
+            </div>
+          </div>
+          <a href="/rekor_directory" class="navbar-item is-secondary">
+            Rekor Directory
+          </a>
+          <a href="/faq/" class="navbar-item is-secondary">
+            FAQ
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/rekor-logo.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
+          OpenAPI Spec
+        </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Get Started
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/get_started/client/" class="navbar-item">
+              Rekor Client
+            </a>
+            <a href="/get_started/server/" class="navbar-item">
+              Rekor Server
+            </a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            Documentation
+          </a>
+
+          <div class="navbar-dropdown">
+            <a href="/docs/api_example/" class="navbar-item">
+              Develop a Rekor API Client
+            </a>
+            <a href="/docs/plugable_types/" class="navbar-item">
+              Plugable types
+            </a>
+          </div>
+        </div>
+        <a href="/rekor_directory" class="navbar-item is-secondary">
+          Rekor Directory
+        </a>
+        <a href="/faq/" class="navbar-item is-secondary">
+          FAQ
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Rekor introduction</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <h2 id="what-is-rekor">What is rekor</h2>
+<p>Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.</p>
+<p>This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</p>
+<p>Software supply chains are exposed to multiple risks. They are exposed to replay or forwarded attacks as well as account and cryptographic key compromise.</p>
+<p><img src="/images/ssc.png" alt="Example image"></p>
+<p>Rekor seeks to combine <strong>provenance</strong>, <strong>integrity</strong>, and <strong>discoverability</strong> to create a transparent and auditable software supply chain:</p>
+<p><strong>Provenance</strong> deals with systematically capturing data describing the relationships among elements such as source code, build tools / compiler, processing steps, contextual information and dependencies. Software provenance can be used for many purposes, such as understanding how an artifact was collected, determining ownership etc.</p>
+<p><strong>Integrity</strong> is a control mechanism that examines objects and checks if their integrity is intact and of a non-tampered state. This is typically achieved using a cryptographically signed digest of the object (for example: code file, binary, configuration file).</p>
+<p><strong>{Discoverability, Transparency}</strong> ensures that all parties see the same set of objects. It allows:</p>
+<ul>
+<li>Consumers of objects with insufficient resources to deeply inspect and examine those objects for correctness to be sure that those same objects are discoverable by other entities who do have the resources to perform such checks.</li>
+<li>Publishers of objects to detect if their identity is compromised and used to sign unauthorised or malicious objects.</li>
+</ul>
+<h2 id="transparency-logs-and-merkle-trees">Transparency logs and Merkle Trees</h2>
+<p>Rekor leverages immutability using Merkle Trees. A Merkle tree is a hash-based data structure implemented as a binary tree. A tree-like structure of hash digests is constructed to an eventual root hash. They are quick to build, but computationally expensive to attempt to unravel and rebuild without breach of the mathematical structure.</p>
+<p><img src="/images/merkle.png" alt="Example image"></p>
+<p>Merkle trees are implemented in technologies such as BitTorrent, Blockchain (transactions) and git. The immutable nature of merkle trees allows nonrepudiation.</p>
+<p>Rekor uses the <a href="https://opensource.google/projects/trillian">Trillian</a> project for its merkle tree implementation. Trillian is used in production for the <a href="https://www.certificate-transparency.org/">certificate transparency project</a>.</p>
+<h2 id="who-can-benefit-from-rekor">Who can benefit from Rekor?</h2>
+<p>Rekor can be leveraged by the following actors:</p>
+<p><img src="/images/arch.png" alt="Example image"></p>
+<h3 id="software-maintainers">Software Maintainers</h3>
+<p>A software maintainer can use Rekor to store the signed digest of an artifact. This would in turn help prevent an attack replacing a digest with the digest of a tampered release. An example of this sort of attack occured to Linux Mint <a href="https://blog.linuxmint.com/?p=2994">when their website was hacked</a>. We have seen a lot of projects storing hashes as a means of provenance for their users on insecure mutable platforms such as README.md files on a git hosted repository. All that is needed is someone&rsquo;s account is compromised, they amend the README.md and self merge and the damage is done.</p>
+<h3 id="software-packaging-systems">Software packaging systems</h3>
+<p>Software packaging systems can harness Rekor to ensure users are not undergoing a targeted attack. Rekor can provide context to the effect of &ldquo;What I am seeing, it what everyone else is seeing&rdquo;.</p>
+<h3 id="attestation-solutions">Attestation solutions</h3>
+<p>Attestation solutions can attest / measure deployed artefacts and utilise Rekor as a means of measurement store.</p>
+<h3 id="security-researchers">Security Researchers</h3>
+<p>Rekors provenance can be queried to discover behavior patterns, for example namespaces being signed by certain keys that do not typically sign a certain project&rsquo;s release.</p>
+<h3 id="security-analytics-site">Security Analytics Site</h3>
+<p>Rekor data can be gathered, indexed and stored allowing the render of data into meaningful graphs.</p>
+<h3 id="insert-your-use-case-here">&lt;Insert your use case here&gt;</h3>
+<p>Rekor is very flexible and allows you to create your own manifest layout. So you can use Rekor to capture your own data sets in a tamper resistant environment.</p>
+<p>These are all just a few examples of who can use and benefit from Rekor. We are always curious to hear new ideas and help shape those into an implementation.</p>
+<h2 id="how-do-i-get-started">How do I get started?</h2>
+<h4 id="use-rekor-as-a-store">Use Rekor as a store</h4>
+<p>If you&rsquo;re someone who wants to sign and store your own releases into Rekor, head over to the <a href="/get_started/client/">Rekor Users section</a></p>
+<h4 id="deploy-your-own-rekor-server">Deploy your own Rekor Server</h4>
+<p>If you want to host your own Rekor transparency service, head over to the <a href="/get_started/server/">Rekor Server section</a></p>
+<h4 id="integrate-with-rekor">Integrate with Rekor</h4>
+<p>If you want to develop your own application that makes use of Rekors APIs, head over to the <a href="/get_started/api_client/">Rekor API Client Example</a></p>
+<h2 id="need-help">Need help?</h2>
+<p>Come on over to our slack channel! <a href="https://projectrekor.slack.com">https://projectrekor.slack.com</a></p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>
