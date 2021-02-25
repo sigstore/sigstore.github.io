@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-title: Rekor
+title: SigStore
 theme: hugo-fresh
 publishDir: "docs"
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
@@ -22,7 +22,7 @@ params:
   # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
   openGraph: true
   # Used as meta data; describe your site to make Google Bots happy
-  description: "A Cryptographic, immutable, append only transparency log"
+  description: "A cryptographic, immutable, append only transparency log"
   navbarlogo:
   # Logo (from static/images/logos/___)
     image: logos/rekor-logo.png
@@ -32,13 +32,14 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Project Rekor
+    title: SigStore
     # Hero subtitle (optional)
-    subtitle: A Cryptographic, immutable, append only transparency log
+    subtitle: A cryptographic, immutable, append only transparency log.
+      Formerly known as Rekor.
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "/what_is_rekor/"
+    buttonlink: "/docs/what_is_sigstore/"
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -51,28 +52,30 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Community
-    url: https://github.com/projectrekor
+    url: https://github.com/SigStore
   - title: OpenAPI Spec
     url: https://rekor.dev/swagger
     # button: true
   - title: Get Started
     sublinks:
-    - title: Rekor Client
+    - title: SigStore Client
       url: /get_started/client/
-    - title: Rekor Server
+    - title: SigStore Server
       url: /get_started/server/
   - title: Documentation
     sublinks:
-    - title: Develop a Rekor API Client
+    - title: What is SigStore?
+      url: /docs/what_is_sigstore/
+    - title: Develop a SigStore API Client
       url: /docs/api_example/
-    - title: Plugable types
-      url: /docs/plugable_types/
-  - title: Rekor Directory
-    url: /rekor_directory
+    - title: Pluggable types
+      url: /docs/pluggable_types/
+  - title: SigStore Directory
+    url: /sigstore_directory
   - title: FAQ
     url: /faq/
   # section1:
-  #   title: Current Users of Rekor
+  #   title: Current Users of SigStore
   #   subtitle: example projects
   #   tiles:
   #   - title: Acme Project
@@ -91,39 +94,39 @@ params:
   #     url: /
   #     buttonText: Find out more
   # # section2:
-  #   title: What can rekor provide
+  #   title: What can SigStore provide
   #   subtitle:
   #   features:
   #   - title: Production grade backend
-  #     text: Rekor uses the certificate transparency project trillian as a cryptographic datastore. Trillian is production hardended software
+  #     text: SigStore uses the certificate transparency project trillian as a cryptographic datastore. Trillian is production hardended software
   #     # Icon (from /images/illustrations/icons/___.svg)
   #     icon: laptop-cloud
   #   - title: Mutliple Formats
-  #     text: Rekor supports many existing formats such as SBOM, In-toto as well as the standard generic rekord type used by projects such as node.js, kernel
+  #     text: SigStore supports many existing formats such as SBOM, In-toto as well as the standard generic rekord type used by projects such as node.js, kernel
   #     icon: doc-sync
   #   - title: OpenAPI
   #     text: We have an openapi, you should use it.
   #     icon: mobile-feed
   section3:
-    title: Integrate with Rekors API's
-    subtitle: Learn how to use Rekor as part of your app eco-system
+    title: Integrate with SigStore's API's
+    subtitle: Learn how to use SigStore as part of your app eco-system
     image: illustrations/mockups/app-mockup.png
     buttonText: Learn More
     buttonLink: "/get_started/"
   section4:
-    title: Current users of Rekor
+    title: Current users of SigStore
     subtitle: User testimonials
     clients:
     - name: Irma Walters
-      quote: As a community rekor has provided a transparent way of logging are software releases of the Acme Framework for our users.
+      quote: As a community SigStore has provided a transparent way of logging are software releases of the Acme Framework for our users.
       job: OSS project, Maintainer
       img: 1
     - name: John Bradley
-      quote: We monitor rekor for activities that might suggest someone misusing our namespace or release signing keys.
+      quote: We monitor SigStore for activities that might suggest someone misusing our namespace or release signing keys.
       job: Developer, Super Security LTD
       img: 2
     - name: Gary Blackman
-      quote: We run our own internal Rekor instance which has helped us meet the strict compilance needs of our customers.
+      quote: We run our own internal SigStore instance which has helped us meet the strict compilance needs of our customers.
       job: Cloud Engineer @ Big Cloud Inc
       img: 3
   # section5: true
@@ -134,7 +137,7 @@ params:
   #   socialmediatitle: Follow Us
   #   # Social media links (GitHub, Twitter, etc.). All are optional.
   #   socialmedia:
-  #   - link: https://github.com/projectrekor
+  #   - link: https://github.com/SigStore
   #     # Icons are from Font Awesome
   #     icon: github
   #   # - link: https://dribbble.com/#

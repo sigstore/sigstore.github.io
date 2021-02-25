@@ -1,53 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rekor</title>
+    <title>SigStore</title>
     <link>/</link>
-    <description>Recent content on Rekor</description>
+    <description>Recent content on SigStore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Dec 2020 12:07:22 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Jan 2021 13:46:19 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
-      <title>Rekor Directory</title>
-      <link>/rekor_directory/</link>
+      <title>SigStore introduction</title>
+      <link>/docs/what_is_sigstore/</link>
+      <pubDate>Thu, 25 Feb 2021 11:03:20 +0000</pubDate>
+      
+      <guid>/docs/what_is_sigstore/</guid>
+      <description>What is SigStore? Put simply, SigStore is a provenance store that is immutable and read-only. SigStore&amp;rsquo;s immutability provides guarantees that any data entered into SigStore cannot be tampered or amended after entry.
+This makes SigStore particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into SigStore which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</description>
+    </item>
+    
+    <item>
+      <title>SigStore Directory</title>
+      <link>/sigstore_directory/</link>
       <pubDate>Tue, 12 Jan 2021 13:46:19 +0000</pubDate>
       
-      <guid>/rekor_directory/</guid>
-      <description>A list of current public instances of rekor
+      <guid>/sigstore_directory/</guid>
+      <description>A list of current public instances of SigStore
    Server Purpose     http://104.198.250.40/api/v1/log Sandbox     Note: servers listed as &amp;lsquo;Sandbox&amp;rsquo; do not guarantee data persistence at presence. Only production systems provide those guarantees  </description>
     </item>
     
     <item>
-      <title>Plugable Types</title>
-      <link>/docs/plugable_types/</link>
+      <title>Pluggable Types</title>
+      <link>/docs/pluggable_types/</link>
       <pubDate>Fri, 11 Dec 2020 12:07:22 +0000</pubDate>
       
-      <guid>/docs/plugable_types/</guid>
-      <description>Description Rekor supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop your own manifest type in your prefered formatting style (json|yaml|xml).
-Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base Schema The base schema for all types is modeled off of the schema used by Kubernetes and can be found in openapi.yaml as #/definitions/ProposedEntry:</description>
+      <guid>/docs/pluggable_types/</guid>
+      <description>NOTE: SigStore was know as Rekor until recently. Some of the tools have not yet been renamed, as such you will see references to &amp;lsquo;Rekor&amp;rsquo; in this page.
+Description SigStore supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop your own manifest type in your prefered formatting style (json|yaml|xml).
+Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base Schema The base schema for all types is modeled off of the schema used by Kubernetes and can be found in openapi.</description>
     </item>
     
     <item>
-      <title>Rekor API Client Example</title>
+      <title>SigStore API Client Example</title>
       <link>/docs/api_example/</link>
       <pubDate>Fri, 11 Dec 2020 10:09:51 +0000</pubDate>
       
       <guid>/docs/api_example/</guid>
-      <description>We use the OpenAPI specification in rekor making it easy to create your own RestFul API client.
-If you&amp;rsquo;re interested in developing an application that can store or retrive entries into a Rekor transparency log, we recommend you take a look at the swagger online editor.</description>
+      <description>We use the OpenAPI specification in SigStore making it easy to create your own RestFul API client.
+If you&amp;rsquo;re interested in developing an application that can store or retrieve entries into a SigStore transparency log, we recommend you take a look at the swagger online editor.</description>
     </item>
     
     <item>
-      <title>Run a Rekor Server</title>
+      <title>Run a SigStore Server</title>
       <link>/get_started/server/</link>
       <pubDate>Tue, 08 Dec 2020 08:12:58 +0000</pubDate>
       
       <guid>/get_started/server/</guid>
-      <description>Run a rekor server There are a few ways to deploy a Rekor Server.
+      <description>NOTE: SigStore was know as Rekor until recently. Some of the tools have not yet been renamed, as such you will see references to &amp;lsquo;Rekor&amp;rsquo; in this page.
+Run a SigStore server There are a few ways to deploy a SigStore Server.
 We have a docker-compose file available
 A kubernetes operator
-Or you could do this manuall and build rekor yourself.
-Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.</description>
+Or you could do this manually and build SigStore yourself. Follow the instructions below to do so.
+Manual Installation Prerequisites You will need a functional installation of the Go programming language.</description>
     </item>
     
     <item>
@@ -56,10 +72,9 @@ Manual Installation Create Database and populate tables Trillian requires a data
       <pubDate>Tue, 08 Dec 2020 08:06:07 +0000</pubDate>
       
       <guid>/get_started/client/</guid>
-      <description>Rekor Command Line Interface The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
-The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
-Download the Rekor CLI application  download details
-Sign your release Before using rekor, you are required to sign your release.</description>
+      <description>NOTE: SigStore was know as Rekor until recently. Some of the tools have not yet been renamed, as such you will see references to &amp;lsquo;Rekor&amp;rsquo; in this page.
+SigStore Command Line Interface The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the SigStore transparency log.
+The steps outlined below will show how to sign your software and then use the rekor CLI tool to make and verify an entry.</description>
     </item>
     
     <item>
@@ -68,27 +83,17 @@ Sign your release Before using rekor, you are required to sign your release.</de
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/faq/</guid>
-      <description>Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&amp;rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</description>
+      <description>Seems like SigStore is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many SigStore’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&amp;rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</description>
     </item>
     
     <item>
-      <title>Rekor introduction</title>
+      <title>SigStore introduction</title>
       <link>/docs/</link>
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/docs/</guid>
-      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
-This makes rekor particularly conducive for the transparency for software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by others for ‘inclusion’ and tamper free state.</description>
-    </item>
-    
-    <item>
-      <title>Rekor introduction</title>
-      <link>/what_is_rekor/</link>
-      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
-      
-      <guid>/what_is_rekor/</guid>
-      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
-This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</description>
+      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. SigStore&amp;rsquo;s immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
+This makes rekor particularly conducive for the transparency for software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into SigStore which can then be queried by others for ‘inclusion’ and tamper free state.</description>
     </item>
     
   </channel>
