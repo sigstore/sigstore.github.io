@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+
+<meta property="og:title" content="sigstore" />
+<meta property="og:description" content="sigstore is a project with the goal of providing a public good / non-profit service to improve the open source software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
+sigstore will seek to empower software developers to securely sign software artifacts such as release files, container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper resistant public log." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/what_is_sigstore/" />
+<meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
+<meta property="article:modified_time" content="2020-12-07T17:09:20+00:00" />
+
+
+<meta name="description" content="Hardcoded description; the author should update :)" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>sigstore</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.f8746099fa9580878ac8821d7955609e754fcc0e51b89057b1b14a3787c4a353.css" integrity="sha256-&#43;HRgmfqVgIeKyIIdeVVgnnVPzA5RuJBXsbFKN4fEo1M=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+
+    
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/rekor-logo.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="https://github.com/SigStore" class="navbar-item is-secondary">
+            Community
+          </a>
+          <a href="/what_is_sigstore/" class="navbar-item is-secondary">
+            Learn More
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/rekor-logo.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="https://github.com/SigStore" class="navbar-item is-secondary">
+          Community
+        </a>
+        <a href="/what_is_sigstore/" class="navbar-item is-secondary">
+          Learn More
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+<section class="section is-medium">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">sigstore</h1>
+        <h5 class="subtitle is-5 is-muted"></h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <!--- Uncomment post launch:   **sigstore** is a [Linux Foundation](https://linuxfoundation.org/) project to develop the code and run the
+infrastructure required to provide a non-profit , free to use software signing service. --->
+<p><strong>sigstore</strong> is a project with the goal of providing a public good / non-profit service to improve the open source
+software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.</p>
+<p><strong>sigstore</strong> will seek to empower software developers to securely sign software artifacts such as release files,
+container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper
+resistant public log.</p>
+<p><strong>sigstore</strong> will be free to use for all developers and software providers, with sigstore&rsquo;s code and operation
+tooling being 100% open source and maintained / developed by the <a href="https://github.com/sigstore"><strong>sigstore</strong> community</a>.</p>
+<h3 id="software-supply-chain-security">Software Supply Chain Security</h3>
+<p>Software supply chains are exposed to multiple risks. Users are susceptible to various targeted attacks, along with
+account and cryptographic key compromise. Keys in particular are a challenge for software maintainers to manage.
+Projects often have to maintain a list of current keys in use, and manage the keys of individuals who no longer
+contribute to a project. Projects all to often store public keys / digests on git repo readme files or websites,
+two forms of storage susceptible to tampering and therefore a less than optimal means of securely communicating trust.</p>
+<p>The toolsets we have historically relied upon were also not built for the present circumstance of remote teams. This can
+be seen by the need to create a web of trust, with teams having to meet in person and sign each other&rsquo;s keys. The
+current tooling (outside of controlled  environments) all to  often <a href="https://blog.filippo.io/giving-up-on-long-term-pgp/">feel inappropriate to even technical users</a>.</p>
+<p><img src="/images/ssc.png" alt="Supply Chain Image"></p>
+<p style="text-align: center;">supply chain risks</p>
+<h2 id="what-is-sigstore">What is sigstore?</h2>
+<p><strong>sigstore</strong> will be a free to use non-profit software signing service that harnesses existing technologies of x509 PKI and
+transparency logs.</p>
+<p>Users generate ephemeral short-lived key pairs using the sigstore client tooling. The sigstore PKI service will then
+provide a signing certificate generated upon a successful OpenID connect grant. All certificates are recorded into a
+certificate transparency log and software signing materials are sent to a signature transparency log. The use of
+transparency logs introduces a trust root to the users OpenID account. We can then for have guarantees that the claimed
+user was in control of an identity service providers account at a specific time of signing. Once this operation is
+complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate.</p>
+<p>Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
+and hardware token generators.</p>
+<p>sigstore&rsquo;s transparency logs can act as a source of provenance, integrity, and discoverability. Being public
+and open anyone can monitor sigtore&rsquo;s transparency logs for occurrences of their software namespace being used,
+perform queries using an artifacts digest, return entries signed by a specific email address, public key etc. Further
+to this, security researchers can monitor the log to seek out possible nefarious patterns or questionable behavior.</p>
+<p><img src="/images/tree.png" alt="Supply Chain Image"></p>
+<p style="text-align: center;">sigstore manifests entry into the transparency log</p>
+<h3 id="what-will-i-be-able-to-sign-and-store">What will I be able to sign and store?</h3>
+<p>We are initially targeting generic release artifacts such as tarballs, compiled binaries and container images. Later
+we will explore other formats (such as jars) and manifest signing, such as SBOM etc. We also open to collaborate with
+package managers and ease the adoption of signing for their communities.</p>
+<h3 id="are-there-any-privacy-concerns">Are there any privacy concerns?</h3>
+<p>We don&rsquo;t think so.</p>
+<p>The only personal data we require will be provided from an OpenID Connect grant, and we keep that as lean as
+we can (the users email address). We don&rsquo;t want access to your contacts, email contents, cloud drive, calendar
+etc. We won&rsquo;t want to email you offers nor sell the accounts to another party to maintain the service. We just need a
+way of mapping a signing event to someone who has access to an identity provider account. This allows us a trust root.</p>
+<h3 id="what-is-the-current-status-of-the-project">What is the current status of the project</h3>
+<p>We now have a fully functioning transparency log named &lsquo;rekor&rsquo;. Rekor consists of a server and client tooling to
+make entries and query for inclusion. It has a customizable schema framework and pluggable PKI framework.</p>
+<p>At present the WebPKI and client signing tooling is under prototype development and is not available for general use.</p>
+<h3 id="can-i-use-the-transparency-log-on-its-own">Can I use the transparency log on its own?</h3>
+<p>Sure, anyone can stand up a rekor instance (rekor is the name of the transparency log project under sigstore). We
+originally planned to just run a t-log, but then we realised not many were likely to use it as the whole signing UX <a href="https://latacora.micro.blog/2019/07/16/the-pgp-problem.html">is
+less than desirable</a>. So we extended the project to include
+an &lsquo;easy to use&rsquo; signing system. So we very much intend to keep rekor in its current state where it can be run in on its
+own. So if you perform your own signing, you can just use rekor on it&rsquo;s own.</p>
+<p>Rekor has a pluggable PKI and support present for the following:</p>
+<ul>
+<li>GPG</li>
+<li>X509</li>
+<li>Minisign</li>
+</ul>
+<p>It also has a customizable manifest schema (pluggable types), so you can get rekor to work with whatever values you need
+(within reason).</p>
+<p>More details of pluggable can be found on the <a href="../docs/plugable_types">types documentation page</a>.</p>
+<p>Documentation on running a rekor server <a href="../get_started/server">is available here</a></p>
+<p>Documentation on the Client CLI <a href="../get_started/client">is available here</a></p>
+<h3 id="why-not-blockchain">Why not blockchain?</h3>
+<p>Mostly for these reasons:</p>
+<ul>
+<li>Public blockchains with all the best of intentions, often end up using a centralized entry point for canonicalization,
+auth etc</li>
+<li>Consensus alg’s can be susceptible to majority attacks</li>
+<li>Transparency logs are more <a href="https://certificate.transparency.dev/">mature in this space at present</a> and they are
+capable of providing exactly what we need.</li>
+</ul>
+<h3 id="do-you-plan-to-run-a-monitor">Do you plan to run a monitor?</h3>
+<p>Yes, we do in some form. Currently some folks from Purdue university are working on a monitor prototype.</p>
+<h3 id="would-i-be-able-to-run-my-own-monitor-or-build-my-own-application-to-interact-with-the-transparency-logs">Would I be able to run my own monitor or build my own application to interact with the transparency logs?</h3>
+<p>Yes, very much! The more people monitoring the logs and rendering or providing useful services to users, the better.</p>
+<p>The sigstore transparency log (rekor) has an <a href="https://rekor.dev/swagger/">OpenAPI interface</a> to make it easier to
+integrate directly with the rekor transparency logs. You can always jump on our <a href="https://sigstore.slack.com">slack workspace</a>
+to run your ideas past us.</p>
+<h3 id="what-is-the-current-status-of-the-project-1">What is the current status of the project</h3>
+<p>As of time of writing [27/02/2021] we have a working transparency log (rekor), that is fully operation as a standalone
+service. Files are available to run this in GKE. Work is now underway to develop WebPKI and OpenID connect based
+services that upon completion will provide the full sigstore signing infrastructure.</p>
+<h2 id="want-to-find-out-more">Want to find out more?</h2>
+<p>Come on over to our slack channel! <a href="https://sigstore.slack.com">https://sigstore.slack.com</a></p>
+
+    </div>
+  </div>
+</section>
+
+
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  </body>
+</html>

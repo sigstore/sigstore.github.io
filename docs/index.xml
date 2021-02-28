@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rekor</title>
+    <title>sigstore</title>
     <link>/</link>
-    <description>Recent content on Rekor</description>
+    <description>Recent content on sigstore</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Dec 2020 12:07:22 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -14,7 +14,7 @@
       
       <guid>/rekor_directory/</guid>
       <description>A list of current public instances of rekor
-   Server Purpose     http://104.198.250.40/api/v1/log Sandbox     Note: servers listed as &amp;lsquo;Sandbox&amp;rsquo; do not guarantee data persistence at presence. Only production systems provide those guarantees  </description>
+   Server Purpose     https://rekor.dev/api/v1/log Sandbox     Note: servers listed as &amp;lsquo;Sandbox&amp;rsquo; do not guarantee data persistence at presence. Only production systems provide those guarantees  </description>
     </item>
     
     <item>
@@ -43,52 +43,33 @@ If you&amp;rsquo;re interested in developing an application that can store or re
       <pubDate>Tue, 08 Dec 2020 08:12:58 +0000</pubDate>
       
       <guid>/get_started/server/</guid>
-      <description>Run a rekor server There are a few ways to deploy a Rekor Server.
+      <description>There are a few ways to deploy a Rekor Server.
 We have a docker-compose file available
 A kubernetes operator
-Or you could do this manuall and build rekor yourself.
+Or you could do this manually and build rekor yourself.
 Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.</description>
     </item>
     
     <item>
-      <title>Client</title>
+      <title>Rekor Command Line Interface</title>
       <link>/get_started/client/</link>
       <pubDate>Tue, 08 Dec 2020 08:06:07 +0000</pubDate>
       
       <guid>/get_started/client/</guid>
-      <description>Rekor Command Line Interface The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
+      <description>The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
 Download the Rekor CLI application  download details
-Sign your release Before using rekor, you are required to sign your release.</description>
+Sign your release Before using rekor, you are required to sign your release. For now we use GPG (we plant to extend to other signing formats in the foreseeable future)</description>
     </item>
     
     <item>
-      <title>Frequently Asked Questions</title>
-      <link>/faq/</link>
+      <title>sigstore</title>
+      <link>/what_is_sigstore/</link>
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
-      <guid>/faq/</guid>
-      <description>Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&amp;rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</description>
-    </item>
-    
-    <item>
-      <title>Rekor introduction</title>
-      <link>/docs/</link>
-      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
-      
-      <guid>/docs/</guid>
-      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
-This makes rekor particularly conducive for the transparency for software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by others for ‘inclusion’ and tamper free state.</description>
-    </item>
-    
-    <item>
-      <title>Rekor introduction</title>
-      <link>/what_is_rekor/</link>
-      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
-      
-      <guid>/what_is_rekor/</guid>
-      <description>What is rekor Put simply, rekor is a provenance store that is immutable and read-only. Rekors immutability provides guarantees that any data entered into rekor cannot be tampered or amended after entry.
-This makes rekor particularly conducive for the transparency of software supply chains. Actors (developers, software maintainers, build / packaging systems) can make entries into Rekor which can then be queried by auditors, packaging systems, researchers for ‘inclusion’ and tamper free state.</description>
+      <guid>/what_is_sigstore/</guid>
+      <description>sigstore is a project with the goal of providing a public good / non-profit service to improve the open source software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
+sigstore will seek to empower software developers to securely sign software artifacts such as release files, container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper resistant public log.</description>
     </item>
     
   </channel>

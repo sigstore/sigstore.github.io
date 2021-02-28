@@ -1,12 +1,10 @@
 ---
-title: "Client"
+title: "Rekor Command Line Interface"
 date: 2020-12-08T08:06:07Z
 draft: false
 section: single
 type: page
 ---
-
-# Rekor Command Line Interface
 
 The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 
