@@ -37,6 +37,15 @@
     <script src="./swagger-ui-standalone-preset.js" charset="UTF-8"> </script>
     <script>
     window.onload = function() {
+      const HTTPSOnly = function() {
+        return {
+          components: {
+            schemes: function() {
+              return null
+            }
+          }
+        }
+      }
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
         url: "https://raw.githubusercontent.com/projectrekor/rekor/main/openapi.yaml",
@@ -47,7 +56,8 @@
           SwaggerUIStandalonePreset
         ],
         plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
+          SwaggerUIBundle.plugins.DownloadUrl,
+          HTTPSOnly
         ],
         layout: "StandaloneLayout"
       })
