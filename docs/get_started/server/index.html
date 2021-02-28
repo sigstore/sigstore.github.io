@@ -4,10 +4,10 @@
     
 
 <meta property="og:title" content="Run a Rekor Server" />
-<meta property="og:description" content="Run a rekor server There are a few ways to deploy a Rekor Server.
+<meta property="og:description" content="There are a few ways to deploy a Rekor Server.
 We have a docker-compose file available
 A kubernetes operator
-Or you could do this manuall and build rekor yourself.
+Or you could do this manually and build rekor yourself.
 Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/get_started/server/" />
@@ -19,7 +19,7 @@ Manual Installation Create Database and populate tables Trillian requires a data
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Rekor</title>
+    <title>sigstore</title>
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
@@ -54,45 +54,11 @@ Manual Installation Create Database and populate tables Trillian requires a data
       <div id="navbar-menu" class="navbar-menu is-static">
 
         <div class="navbar-end">
-          <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+          <a href="https://github.com/SigStore" class="navbar-item is-secondary">
             Community
           </a>
-          <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
-            OpenAPI Spec
-          </a>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Get Started
-            </a>
-
-            <div class="navbar-dropdown">
-              <a href="/get_started/client/" class="navbar-item">
-                Rekor Client
-              </a>
-              <a href="/get_started/server/" class="navbar-item">
-                Rekor Server
-              </a>
-            </div>
-          </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
-              Documentation
-            </a>
-
-            <div class="navbar-dropdown">
-              <a href="/docs/api_example/" class="navbar-item">
-                Develop a Rekor API Client
-              </a>
-              <a href="/docs/plugable_types/" class="navbar-item">
-                Plugable types
-              </a>
-            </div>
-          </div>
-          <a href="/rekor_directory" class="navbar-item is-secondary">
-            Rekor Directory
-          </a>
-          <a href="/faq/" class="navbar-item is-secondary">
-            FAQ
+          <a href="/what_is_sigstore/" class="navbar-item is-secondary">
+            Learn More
           </a>
         </div>
       </div>
@@ -118,45 +84,11 @@ Manual Installation Create Database and populate tables Trillian requires a data
     <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
 
       <div class="navbar-end">
-        <a href="https://github.com/projectrekor" class="navbar-item is-secondary">
+        <a href="https://github.com/SigStore" class="navbar-item is-secondary">
           Community
         </a>
-        <a href="https://rekor.dev/swagger" class="navbar-item is-secondary">
-          OpenAPI Spec
-        </a>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Get Started
-          </a>
-
-          <div class="navbar-dropdown">
-            <a href="/get_started/client/" class="navbar-item">
-              Rekor Client
-            </a>
-            <a href="/get_started/server/" class="navbar-item">
-              Rekor Server
-            </a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            Documentation
-          </a>
-
-          <div class="navbar-dropdown">
-            <a href="/docs/api_example/" class="navbar-item">
-              Develop a Rekor API Client
-            </a>
-            <a href="/docs/plugable_types/" class="navbar-item">
-              Plugable types
-            </a>
-          </div>
-        </div>
-        <a href="/rekor_directory" class="navbar-item is-secondary">
-          Rekor Directory
-        </a>
-        <a href="/faq/" class="navbar-item is-secondary">
-          FAQ
+        <a href="/what_is_sigstore/" class="navbar-item is-secondary">
+          Learn More
         </a>
       </div>
     </div>
@@ -174,11 +106,10 @@ Manual Installation Create Database and populate tables Trillian requires a data
     </div>
 
     <div class="content">
-      <h1 id="run-a-rekor-server">Run a rekor server</h1>
-<p>There are a few ways to deploy a Rekor Server.</p>
+      <p>There are a few ways to deploy a Rekor Server.</p>
 <p>We have a <a href="https://github.com/projectrekor/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</p>
 <p>A <a href="https://github.com/projectrekor/rekor-operator">kubernetes operator</a></p>
-<p>Or you could do this manuall and build rekor yourself.</p>
+<p>Or you could do this manually and build rekor yourself.</p>
 <h1 id="manual-installation">Manual Installation</h1>
 <h2 id="create-database-and-populate-tables">Create Database and populate tables</h2>
 <p>Trillian requires a database, we use MariaDB for now (others to be explored later). Once this

@@ -1,6 +1,6 @@
 baseURL: /
 languageCode: en-us
-title: Rekor
+title: sigstore
 theme: hugo-fresh
 publishDir: "docs"
 googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
@@ -32,13 +32,13 @@ params:
     sizes: [400,600]
   hero:
     # Main hero title
-    title: Project Rekor
+    title: sigstore
     # Hero subtitle (optional)
-    subtitle: A Cryptographic, immutable, append only transparency log
+    subtitle: A non-profit , public good software signing & transparency service
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
-    buttonlink: "/what_is_rekor/"
+    buttonlink: "/what_is_sigstore/"
     # Hero image (from static/images/___)
     image: illustrations/rekor-logo-symbol-github.png
     # Footer logos (from static/images/logos/clients/___.svg)
@@ -51,26 +51,18 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Community
-    url: https://github.com/projectrekor
-  - title: OpenAPI Spec
-    url: https://rekor.dev/swagger
+    url: https://github.com/SigStore
     # button: true
-  - title: Get Started
-    sublinks:
-    - title: Rekor Client
-      url: /get_started/client/
-    - title: Rekor Server
-      url: /get_started/server/
-  - title: Documentation
-    sublinks:
-    - title: Develop a Rekor API Client
-      url: /docs/api_example/
-    - title: Plugable types
-      url: /docs/plugable_types/
-  - title: Rekor Directory
-    url: /rekor_directory
-  - title: FAQ
-    url: /faq/
+  - title: Learn More
+    url: "/what_is_sigstore/"
+
+#    - title: Fulcio WebPKI
+#      url: /fulcio_webpki
+#    - title: pkgsign Signing Client
+#      url: /pksign_signing_client
+#    - title: cosign Container Signing Client
+#      url: /cosign_signing_client
+
   # section1:
   #   title: Current Users of Rekor
   #   subtitle: example projects
@@ -104,28 +96,28 @@ params:
   #   - title: OpenAPI
   #     text: We have an openapi, you should use it.
   #     icon: mobile-feed
-  section3:
-    title: Integrate with Rekors API's
-    subtitle: Learn how to use Rekor as part of your app eco-system
-    image: illustrations/mockups/app-mockup.png
-    buttonText: Learn More
-    buttonLink: "/get_started/"
-  section4:
-    title: Current users of Rekor
-    subtitle: User testimonials
-    clients:
-    - name: Irma Walters
-      quote: As a community rekor has provided a transparent way of logging are software releases of the Acme Framework for our users.
-      job: OSS project, Maintainer
-      img: 1
-    - name: John Bradley
-      quote: We monitor rekor for activities that might suggest someone misusing our namespace or release signing keys.
-      job: Developer, Super Security LTD
-      img: 2
-    - name: Gary Blackman
-      quote: We run our own internal Rekor instance which has helped us meet the strict compilance needs of our customers.
-      job: Cloud Engineer @ Big Cloud Inc
-      img: 3
+  # section3:
+  #   title: Integrate with Rekors API's
+  #   subtitle: Learn how to use Rekor as part of your app eco-system
+  #   image: illustrations/mockups/app-mockup.png
+  #   buttonText: Learn More
+  #   buttonLink: "/get_started/"
+  # section4:
+  #   title: Current users of Rekor
+  #   subtitle: User testimonials
+  #   clients:
+  #   - name: Irma Walters
+  #     quote: As a community rekor has provided a transparent way of logging are software releases of the Acme Framework for our users.
+  #     job: OSS project, Maintainer
+  #     img: 1
+  #   - name: John Bradley
+  #     quote: We monitor rekor for activities that might suggest someone misusing our namespace or release signing keys.
+  #     job: Developer, Super Security LTD
+  #     img: 2
+  #   - name: Gary Blackman
+  #     quote: We run our own internal Rekor instance which has helped us meet the strict compilance needs of our customers.
+  #     job: Cloud Engineer @ Big Cloud Inc
+  #     img: 3
   # section5: true
   # footer:
   #   # Logo (from /images/logos/___)
