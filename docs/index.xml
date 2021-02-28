@@ -59,7 +59,16 @@ Manual Installation Create Database and populate tables Trillian requires a data
       <description>The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
 Download the Rekor CLI application  download details
-Sign your release Before using rekor, you are required to sign your release. For now we use GPG (we plant to extend to other signing formats in the foreseeable future)</description>
+Sign your release Before using rekor, you are required to sign your release. The following example illustrates GPG.</description>
+    </item>
+    
+    <item>
+      <title>Frequently Asked Questions</title>
+      <link>/faq/</link>
+      <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
+      
+      <guid>/faq/</guid>
+      <description>Seems like Rekor is centralised?  Yes, why not? There is no need for a distributed source of transparency. There can be multiple points of transparency which only adds more sources of security guarantee, not less. An entity can post to as many Rekor’s as they want and inform users of where they post. We do encourage folks to use common public instances, but we don&amp;rsquo;t seek to enforce this. We do plan to look to produce a gossip protocol, for those that desire a more decentralised model (if the demand is shown).</description>
     </item>
     
     <item>

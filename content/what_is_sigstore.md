@@ -41,8 +41,8 @@ transparency logs.
 Users generate ephemeral short-lived key pairs using the sigstore client tooling. The sigstore PKI service will then
 provide a signing certificate generated upon a successful OpenID connect grant. All certificates are recorded into a
 certificate transparency log and software signing materials are sent to a signature transparency log. The use of
-transparency logs introduces a trust root to the users OpenID account. We can then for have guarantees that the claimed
-user was in control of an identity service providers account at a specific time of signing. Once this operation is
+transparency logs introduces a trust root to the users OpenID account. We can then have guarantees that the claimed
+user was in control of an identity service providers account at the time of signing. Once the signing operation is
 complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate. 
 
 Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
