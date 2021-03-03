@@ -51,7 +51,14 @@ params:
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
   - title: Community
-    url: https://github.com/SigStore
+    url: https://github.com/sigstore
+    sublinks:
+    - title: Rekor
+      url: https://github.com/sigstore/rekor
+    - title: Cosign
+      url: https://github.com/sigstore/cosign
+    - title: Fulcio
+      url: https://github.com/sigstore/fulcio
     # button: true
   - title: Learn More
     url: "/what_is_sigstore/"
