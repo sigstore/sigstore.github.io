@@ -141,7 +141,7 @@ Sign your release Before using rekor, you are required to sign your release. The
 <p>Before using rekor, you are required to sign your release. The following example illustrates
 GPG.</p>
 <p>You may use either armored or plain binary:</p>
-<pre><code>gpg --armor -u jdoe@example.com --output mysignature.asc --detach-sig myrelease.tar.gz
+<pre><code>gpg --armor -u jdoe@example.com --output mysignature.asc --detach-sign myrelease.tar.gz
 </code></pre><p>You will also need to export your public key</p>
 <pre><code>gpg --export --armor &quot;jdoe@example.com&quot; &gt; mypublickey.key
 </code></pre><h2 id="upload-an-entry-rekor">Upload an entry rekor</h2>
