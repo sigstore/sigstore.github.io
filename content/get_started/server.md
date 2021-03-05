@@ -15,20 +15,40 @@ Or you could do this manually and build rekor yourself.
 
 # Manual Installation
 
+## Prerequisites
+
+You will of course also need golang version 1.15 or greater and a `$GOPATH` set.
+
+If you want to perform fast queries add redis, if not you will need to pass `--enable_retrieve_api=false`
+when running `rekor-server` in the later steps of this page.
+
+## Get Rekor
+
+Grab the rekor source:
+
+`go get -u -t -v github.com/sigstore/rekor/cmd/server`
+
+* Note: You can also `git clone` should you prefer
+
 ## Create Database and populate tables
 
 Trillian requires a database, we use MariaDB for now (others to be explored later). Once this
-is installed on your machine edit the `scripts/createdb.sh` with your database root account credentials and run the script.
+is installed on your machine edit the `scripts/createdb.sh` with your database root account credentials and run the
+script. If you're just trying out rekor, keep the db user name and password the same as in the script (test/zaphod). If
+you change these, you need to make the changes on trillians side (visit the trillian repo for details)
 
 ## Build Trillian
 
-To run rekor you need to build trillian
+To run rekor you need to build trillian:
 
 ```
-go get github.com/google/trillian.git
-go build ./cmd/trillian_log_server
-go build ./cmd/trillian_log_signer
-
+go get -u -t -v github.com/google/trillian
+cd $GOPATH/src/github.com/google/trillian/cmd/trillian_log_server
+go build
+cp trillian_log_server /usr/local/bin/
+cd $GOPATH/src/github.com/google/trillian/cmd/trillian_log_signer
+go build
+cp trillian_log_signer /usr/local/bin/
 ```
 
 ### Start the tlog server
@@ -45,14 +65,16 @@ trillian_log_signer --logtostderr --force_master --http_endpoint=localhost:8190 
 
 ## Build Rekor Server
 
-From `rekor/cmd/server`
-
-`go build -o rekor-server`
+```
+cd $GOPATH/src/github.com/sigstore/rekor/cmd/server
+go build -v -o rekor-server
+cp rekor-server /usr/local/bin/
+```
 
 ## Start the rekor server
 
 ```
-./rekor-server serve
+rekor-server serve
 2020-09-12T16:32:22.705+0100	INFO	cmd/root.go:87	Using config file: /Users/lukehinds/go/src/github.com/projectrekor/rekor-server/rekor-server.yaml
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:55	Starting server...
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:61	Listening on 127.0.0.1:3000
