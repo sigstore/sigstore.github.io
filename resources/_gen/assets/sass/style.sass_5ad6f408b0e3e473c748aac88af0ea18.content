@@ -6107,7 +6107,7 @@ label.panel-block {
   .hero.is-halfheight {
     min-height: 50vh; }
   .hero.is-fullheight {
-    min-height: 100vh; }
+    min-height: 75vh; }
 
 .hero-video {
   overflow: hidden; }
@@ -6398,8 +6398,8 @@ Hero styles
 Fresh Footer
 ========================================================================== */
 footer.footer-dark {
-  background: #444F60;
-  color: #fff; }
+  background: #fff;
+  color: #0a0a0a; }
   footer.footer-dark .columns {
     margin-top: 35px; }
   footer.footer-dark .footer-logo img {
