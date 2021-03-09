@@ -5,7 +5,7 @@ draft: false
 section: single
 type: page
 ---
-**sigstore** is a [Linux Foundation](https://linuxfoundation.org/).
+**sigstore** is a [Linux Foundation](https://linuxfoundation.org/) project.
 
 
 **sigstore** is a project with the goal of providing a public good / non-profit service to improve the open source
