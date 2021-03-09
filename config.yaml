@@ -126,54 +126,7 @@ params:
   #     job: Cloud Engineer @ Big Cloud Inc
   #     img: 3
   # section5: true
-  # footer:
-  #   # Logo (from /images/logos/___)
-  #   logo: rekor-logo.png
-  #   # Social Media Title
-  #   socialmediatitle: Follow Us
-  #   # Social media links (GitHub, Twitter, etc.). All are optional.
-  #   socialmedia:
-  #   - link: https://github.com/projectrekor
-  #     # Icons are from Font Awesome
-  #     icon: github
-  #   # - link: https://dribbble.com/#
-  #   #   icon: dribbble
-  #   # - link: https://facebook.com/#
-  #   #   icon: facebook
-  #   - link: #
-  #     icon: twitter
-  #   # - link: https://bitbucket.org/#
-  #   #   icon: bitbucket
-  #   bulmalogo: false
-  #   quicklinks:
-  #     column1:
-  #       title: "Placeholder 1"
-  #       links:
-  #       - text: Discover features
-  #         link: /
-  #       - text: Why choose our product?
-  #         link: /
-  #       - text: Compare features
-  #         link: /
-  #       - text: Our roadmap
-  #         link: /
-  #       - text: AGB
-  #         link: /agb
-  #     column2:
-  #       title: "Placeholder 2"
-  #       links:
-  #       - text: Get started
-  #         link: /
-  #       - text: User guides
-  #         link: /
-  #       - text: Admin guide
-  #         link: /
-  #       - text: Developers
-  #         link: /
-  #     column3:
-  #       title: "Placeholder 3"
-  #       links:
-  #       - text: Latest news
-  #         link: /blog/first
-  #       - text: Tech articles
-  #         link: /blog/second
+  footer:
+    # Logo (from /images/logos/___)
+    logo: lf.png
+    # Social Media Title
