@@ -78,7 +78,7 @@ Build rekor go get -u -t -v github.</description>
       <pubDate>Mon, 07 Dec 2020 17:09:20 +0000</pubDate>
       
       <guid>/what_is_sigstore/</guid>
-      <description>sigstore is a Linux Foundation.
+      <description>sigstore is a Linux Foundation project.
 sigstore is a project with the goal of providing a public good / non-profit service to improve the open source software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
 sigstore will seek to empower software developers to securely sign software artifacts such as release files, container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper resistant public log</description>
     </item>
