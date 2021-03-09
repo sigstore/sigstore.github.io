@@ -12,7 +12,18 @@ The steps outlined below will show how to sign your software and then use the `r
 
 ## Download the Rekor CLI application
 
-<TODO> download details
+## Prerequisites
+
+You will of course also need golang version 1.15 or greater and a `$GOPATH` set.
+
+## Build rekor
+
+```
+go get -u -t -v github.com/sigstore/rekor/cmd/cli
+cd $GOPATH/src/github.com/sigstore/rekor/cmd/cli
+go build -v -o rekor
+cp rekor /usr/local/bin/
+```
 
 ## Sign your release
 

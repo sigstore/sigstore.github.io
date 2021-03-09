@@ -47,7 +47,8 @@ If you&amp;rsquo;re interested in developing an application that can store or re
 We have a docker-compose file available
 A kubernetes operator
 Or you could do this manually and build rekor yourself.
-Manual Installation Create Database and populate tables Trillian requires a database, we use MariaDB for now (others to be explored later). Once this is installed on your machine edit the scripts/createdb.sh with your database root account credentials and run the script.</description>
+Manual Installation Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
+If you want to perform fast queries add redis, if not you will need to pass --enable_retrieve_api=false when running rekor-server in the later steps of this page.</description>
     </item>
     
     <item>
@@ -58,8 +59,8 @@ Manual Installation Create Database and populate tables Trillian requires a data
       <guid>/get_started/client/</guid>
       <description>The following guide is targeted towards developers / software maintainers who would like to make a provenance entry into the rekor transparency log.
 The steps outlined below will show how to sign your software and then use the rekor CLI to make and verify an entry.
-Download the Rekor CLI application  download details
-Sign your release Before using rekor, you are required to sign your release. The following example illustrates GPG.</description>
+Download the Rekor CLI application Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
+Build rekor go get -u -t -v github.</description>
     </item>
     
     <item>
