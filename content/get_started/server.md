@@ -7,9 +7,9 @@ type: page
 ---
 There are a few ways to deploy a Rekor Server.
 
-We have a [docker-compose](https://github.com/projectrekor/rekor/blob/main/docker-compose.yml) file available
+We have a [docker-compose](https://github.com/sigstore/rekor/blob/main/docker-compose.yml) file available
 
-A [kubernetes operator](https://github.com/projectrekor/rekor-operator)
+A [kubernetes operator](https://github.com/sigstore/rekor-operator)
 
 Or you could do this manually and build rekor yourself.
 
@@ -75,7 +75,7 @@ cp rekor-server /usr/local/bin/
 
 ```
 rekor-server serve
-2020-09-12T16:32:22.705+0100	INFO	cmd/root.go:87	Using config file: /Users/lukehinds/go/src/github.com/projectrekor/rekor-server/rekor-server.yaml
+2020-09-12T16:32:22.705+0100	INFO	cmd/root.go:87	Using config file: /Users/lukehinds/go/src/github.com/sigstore/rekor-server/rekor-server.yaml
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:55	Starting server...
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:61	Listening on 127.0.0.1:3000
 ```
