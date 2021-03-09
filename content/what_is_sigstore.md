@@ -5,15 +5,15 @@ draft: false
 section: single
 type: page
 ---
-<!--- Uncomment post launch:   **sigstore** is a [Linux Foundation](https://linuxfoundation.org/) project to develop the code and run the
-infrastructure required to provide a non-profit , free to use software signing service. --->
+**sigstore** is a [Linux Foundation](https://linuxfoundation.org/).
+
 
 **sigstore** is a project with the goal of providing a public good / non-profit service to improve the open source
 software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
 
-**sigstore** will seek to empower software developers to securely sign software artifacts such as release files, 
+**sigstore** will seek to empower software developers to securely sign software artifacts such as release files,
 container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper
-resistant public log. 
+resistant public log
 
 **sigstore** will be free to use for all developers and software providers, with sigstore's code and operation
 tooling being 100% open source and maintained / developed by the [**sigstore** community](https://github.com/sigstore).
