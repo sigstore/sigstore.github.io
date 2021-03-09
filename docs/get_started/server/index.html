@@ -24,7 +24,7 @@ If you want to perform fast queries add redis, if not you will need to pass --en
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/style.min.45e9a35fd5e574e1a2b3dc76f8bdea0d5ae61fa9319687f38cc1e6705e3d9c9b.css" integrity="sha256-RemjX9XldOGis9x2&#43;L3qDVrmH6kxlofzjMHmcF49nJs=">
+<link rel="stylesheet" type="text/css" href="/css/style.min.acbaeecf74e0c3f8de46621f2daac54b9e07e7e292aeaddbd121dd7ea67ebc58.css" integrity="sha256-rLruz3Tgw/jeRmIfLarFS54H5&#43;KSrq3b0SHdfqZ&#43;vFg=">
 <link rel="stylesheet" type="text/css" href="/css/icons.css">
 
   </head>
@@ -136,8 +136,8 @@ If you want to perform fast queries add redis, if not you will need to pass --en
 
     <div class="content">
       <p>There are a few ways to deploy a Rekor Server.</p>
-<p>We have a <a href="https://github.com/projectrekor/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</p>
-<p>A <a href="https://github.com/projectrekor/rekor-operator">kubernetes operator</a></p>
+<p>We have a <a href="https://github.com/sigstore/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</p>
+<p>A <a href="https://github.com/sigstore/rekor-operator">kubernetes operator</a></p>
 <p>Or you could do this manually and build rekor yourself.</p>
 <h1 id="manual-installation">Manual Installation</h1>
 <h2 id="prerequisites">Prerequisites</h2>
@@ -174,7 +174,7 @@ go build -v -o rekor-server
 cp rekor-server /usr/local/bin/
 </code></pre><h2 id="start-the-rekor-server">Start the rekor server</h2>
 <pre><code>rekor-server serve
-2020-09-12T16:32:22.705+0100	INFO	cmd/root.go:87	Using config file: /Users/lukehinds/go/src/github.com/projectrekor/rekor-server/rekor-server.yaml
+2020-09-12T16:32:22.705+0100	INFO	cmd/root.go:87	Using config file: /Users/lukehinds/go/src/github.com/sigstore/rekor-server/rekor-server.yaml
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:55	Starting server...
 2020-09-12T16:32:22.705+0100	INFO	app/server.go:61	Listening on 127.0.0.1:3000
 </code></pre>

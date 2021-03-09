@@ -20,7 +20,7 @@ Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base
     
 <link rel="icon" type="image/png" href="/images/favicon.png" />
 <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="/css/style.min.45e9a35fd5e574e1a2b3dc76f8bdea0d5ae61fa9319687f38cc1e6705e3d9c9b.css" integrity="sha256-RemjX9XldOGis9x2&#43;L3qDVrmH6kxlofzjMHmcF49nJs=">
+<link rel="stylesheet" type="text/css" href="/css/style.min.acbaeecf74e0c3f8de46621f2daac54b9e07e7e292aeaddbd121dd7ea67ebc58.css" integrity="sha256-rLruz3Tgw/jeRmIfLarFS54H5&#43;KSrq3b0SHdfqZ&#43;vFg=">
 <link rel="stylesheet" type="text/css" href="/css/icons.css">
 
   </head>
@@ -223,7 +223,7 @@ your own manifest type in your prefered formatting style (json|yaml|xml).</p>
 </li>
 </ul>
 <ol start="5">
-<li>In the Go package you have created for the new type, be sure to add an entry in the <code>TypeMap</code> in <code>github.com/projectrekor/rekor/pkg/types</code> for your new type in the <code>init</code> method for your package. The key for the map is the unique string used to define your type in <code>openapi.yaml</code> (e.g. <code>newType</code>), and the value for the map is the name of a factory function for an instance of <code>TypeImpl</code>.</li>
+<li>In the Go package you have created for the new type, be sure to add an entry in the <code>TypeMap</code> in <code>github.com/sigstore/rekor/pkg/types</code> for your new type in the <code>init</code> method for your package. The key for the map is the unique string used to define your type in <code>openapi.yaml</code> (e.g. <code>newType</code>), and the value for the map is the name of a factory function for an instance of <code>TypeImpl</code>.</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
 	<span class="nx">types</span><span class="p">.</span><span class="nx">TypeMap</span><span class="p">.</span><span class="nf">Set</span><span class="p">(</span><span class="s">&#34;newType&#34;</span><span class="p">,</span> <span class="nx">NewEntry</span><span class="p">)</span>
@@ -233,7 +233,7 @@ your own manifest type in your prefered formatting style (json|yaml|xml).</p>
 <p>Add an entry to <code>pluggableTypeMap</code> in <code>cmd/server/app/serve.go</code> that provides a reference to your package. This ensures that the <code>init</code> function of your type (and optionally, your version implementation) will be called before the server starts to process incoming requests and therefore will be added to the map that is used to route request processing for different types.</p>
 </li>
 <li>
-<p>After adding sufficient unit &amp; integration tests, submit a pull request to <code>projectrekor/rekor</code> for review and addition to the codebase.</p>
+<p>After adding sufficient unit &amp; integration tests, submit a pull request to <code>sigstore/rekor</code> for review and addition to the codebase.</p>
 </li>
 </ol>
 <h2 id="adding-a-new-version-of-the-rekord-type">Adding a New Version of the <code>Rekord</code> type</h2>
@@ -255,7 +255,7 @@ your own manifest type in your prefered formatting style (json|yaml|xml).</p>
 <p>Add an entry to <code>pluggableTypeMap</code> in <code>cmd/server/app/serve.go</code> that provides a reference to the Go package implementing the new version. This ensures that the <code>init</code> function will be called before the server starts to process incoming requests and therefore will be added to the map that is used to route request processing for different types.</p>
 </li>
 <li>
-<p>After adding sufficient unit &amp; integration tests, submit a pull request to <code>projectrekor/rekor</code> for review and addition to the codebase.</p>
+<p>After adding sufficient unit &amp; integration tests, submit a pull request to <code>sigstore/rekor</code> for review and addition to the codebase.</p>
 </li>
 </ol>
 
