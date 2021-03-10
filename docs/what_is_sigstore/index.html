@@ -8,9 +8,10 @@
 sigstore is a project with the goal of providing a public good / non-profit service to improve the open source software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
 sigstore will seek to empower software developers to securely sign software artifacts such as release files, container images, binaries, bill of material manifests and more. Signing materials are then stored into a tamper resistant public log" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/what_is_sigstore/" />
-<meta property="article:published_time" content="2020-12-07T17:09:20+00:00" />
-<meta property="article:modified_time" content="2020-12-07T17:09:20+00:00" />
+<meta property="og:url" content="/what_is_sigstore/" /><meta property="article:section" content="" />
+<meta property="article:published_time" content="2020-12-07T17:09:20&#43;00:00" />
+<meta property="article:modified_time" content="2020-12-07T17:09:20&#43;00:00" />
+
 
 
 <meta name="description" content="A non-profit, public good software signing &amp; transparency service" />
@@ -169,8 +170,8 @@ complete, the keys can be discarded, removing any need for further key managemen
 <p>Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
 and hardware token generators.</p>
 <p>sigstore&rsquo;s transparency logs can act as a source of provenance, integrity, and discoverability. Being public
-and open anyone can monitor sigtore&rsquo;s transparency logs for occurrences of their software namespace being used,
-perform queries using an artifacts digest, return entries signed by a specific email address, public key etc. Further
+and open anyone can monitor sigstore&rsquo;s transparency logs for occurrences of their software namespace being used,
+perform queries using an artifact&rsquo;s digest, return entries signed by a specific email address, public key, etc. Further
 to this, security researchers can monitor the log to seek out possible nefarious patterns or questionable behavior.</p>
 <p><img src="/images/tree.png" alt="Supply Chain Image"></p>
 <p style="text-align: center;">sigstore manifests entry into the transparency log</p>
@@ -202,15 +203,15 @@ own. So if you perform your own signing, you can just use rekor on it&rsquo;s ow
 </ul>
 <p>It also has a customizable manifest schema (pluggable types), so you can get rekor to work with whatever values you need
 (within reason).</p>
-<p>More details of pluggable can be found on the <a href="../docs/plugable_types">types documentation page</a>.</p>
+<p>More details of pluggable types can be found on the related <a href="../docs/plugable_types">documentation page</a>.</p>
 <p>Documentation on running a rekor server <a href="../get_started/server">is available here</a></p>
-<p>Documentation on the Client CLI <a href="../get_started/client">is available here</a></p>
+<p>Documentation on the rekor client CLI (for adding an entry to a rekor transparency log)  <a href="../get_started/client">is available here</a></p>
 <h3 id="why-not-blockchain">Why not blockchain?</h3>
 <p>Mostly for these reasons:</p>
 <ul>
 <li>Public blockchains with all the best of intentions, often end up using a centralized entry point for canonicalization,
 auth etc</li>
-<li>Consensus alg’s can be susceptible to majority attacks</li>
+<li>Consensus algorithms can be susceptible to majority attacks</li>
 <li>Transparency logs are more <a href="https://certificate.transparency.dev/">mature in this space at present</a> and they are
 capable of providing exactly what we need.</li>
 </ul>
