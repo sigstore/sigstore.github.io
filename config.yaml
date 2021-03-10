@@ -62,6 +62,8 @@ params:
     # button: true
   - title: Learn More
     url: "/what_is_sigstore/"
+  - title: Slack
+    url: https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ
 
 #    - title: Fulcio WebPKI
 #      url: /fulcio_webpki

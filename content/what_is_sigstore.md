@@ -120,7 +120,7 @@ Yes, we do in some form. Currently some folks from Purdue university are working
 Yes, very much! The more people monitoring the logs and rendering or providing useful services to users, the better.
 
 The sigstore transparency log (rekor) has an [OpenAPI interface](https://sigstore.dev/swagger/) to make it easier to
-integrate directly with the rekor transparency logs. You can always jump on our [slack workspace](https://sigstore.slack.com)
+integrate directly with the rekor transparency logs. You can always jump on our [slack workspace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
 to run your ideas past us.
 
 ### What is the current status of the project
@@ -131,4 +131,5 @@ services that upon completion will provide the full sigstore signing infrastruct
 
 ## Want to find out more?
 
-Come on over to our slack channel! https://sigstore.slack.com
+Come on over to our [slack
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
