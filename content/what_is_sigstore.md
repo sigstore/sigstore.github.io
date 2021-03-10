@@ -84,7 +84,7 @@ Sure, anyone can stand up a rekor instance (rekor is the name of the transparenc
 originally planned to just run a t-log, but then we realised not many were likely to use it as the whole signing UX [is
 less than desirable](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html). So we extended the project to include
 an 'easy to use' signing system. So we very much intend to keep rekor in its current state where it can be run in on its
-own. So if you perform your own signing, you can just use rekor on it's own.
+own. So if you perform your own signing, you can just use rekor on its own.
 
 Rekor has a pluggable PKI and support present for the following:
 
