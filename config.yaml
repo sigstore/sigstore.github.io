@@ -34,7 +34,7 @@ params:
     # Main hero title
     title: sigstore
     # Hero subtitle (optional)
-    subtitle: A non-profit , public good software signing & transparency service
+    subtitle: A non-profit, public good software signing & transparency service
     # Button text
     buttontext: Learn More
     # Where the main hero button links to
