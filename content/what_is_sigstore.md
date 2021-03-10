@@ -49,8 +49,8 @@ Using OpenID connect identities allows users to take advantage of existing secur
 and hardware token generators.
 
 sigstore's transparency logs can act as a source of provenance, integrity, and discoverability. Being public
-and open anyone can monitor sigtore's transparency logs for occurrences of their software namespace being used,
-perform queries using an artifacts digest, return entries signed by a specific email address, public key etc. Further
+and open anyone can monitor sigstore's transparency logs for occurrences of their software namespace being used,
+perform queries using an artifact's digest, return entries signed by a specific email address, public key, etc. Further
 to this, security researchers can monitor the log to seek out possible nefarious patterns or questionable behavior.
 
 ![Supply Chain Image](/images/tree.png)
@@ -95,11 +95,11 @@ Rekor has a pluggable PKI and support present for the following:
 It also has a customizable manifest schema (pluggable types), so you can get rekor to work with whatever values you need
 (within reason).
 
-More details of pluggable can be found on the [types documentation page](../docs/plugable_types).
+More details of pluggable types can be found on the related [documentation page](../docs/plugable_types).
 
 Documentation on running a rekor server [is available here](../get_started/server)
 
-Documentation on the Client CLI [is available here](../get_started/client)
+Documentation on the rekor client CLI (for adding an entry to a rekor transparency log)  [is available here](../get_started/client)
 
 ### Why not blockchain?
 
@@ -107,7 +107,7 @@ Mostly for these reasons:
 
 * Public blockchains with all the best of intentions, often end up using a centralized entry point for canonicalization,
   auth etc
-* Consensus alg’s can be susceptible to majority attacks
+* Consensus algorithms can be susceptible to majority attacks
 * Transparency logs are more [mature in this space at present](https://certificate.transparency.dev/) and they are
   capable of providing exactly what we need.
   
