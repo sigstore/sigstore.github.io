@@ -23,12 +23,12 @@ tooling being 100% open source and maintained / developed by the [**sigstore** c
 Software supply chains are exposed to multiple risks. Users are susceptible to various targeted attacks, along with
 account and cryptographic key compromise. Keys in particular are a challenge for software maintainers to manage.
 Projects often have to maintain a list of current keys in use, and manage the keys of individuals who no longer
-contribute to a project. Projects all to often store public keys / digests on git repo readme files or websites,
+contribute to a project. Projects all too often store public keys / digests on git repo readme files or websites,
 two forms of storage susceptible to tampering and therefore a less than optimal means of securely communicating trust.
 
 The toolsets we have historically relied upon were also not built for the present circumstance of remote teams. This can
 be seen by the need to create a web of trust, with teams having to meet in person and sign each other's keys. The
-current tooling (outside of controlled  environments) all to  often [feel inappropriate to even technical users](https://blog.filippo.io/giving-up-on-long-term-pgp/).
+current tooling (outside of controlled  environments) all too often [feel inappropriate to even technical users](https://blog.filippo.io/giving-up-on-long-term-pgp/).
 
 ![Supply Chain Image](/images/ssc.png)
 <p style="text-align: center;">supply chain risks</p>
