@@ -132,4 +132,4 @@ services that upon completion will provide the full sigstore signing infrastruct
 ## Want to find out more?
 
 Come on over to our [slack
-workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ) or join our mailing list at [sigstore-dev@googlegroups.com](https://groups.google.com/g/sigstore-dev)
