@@ -102,6 +102,6 @@ and then uses the public key to verify the signing of the signed tree head.
 
 If running a redis instance within rekor, the search command performs a redis lookup using a file or a public key
 
-This command requires one of a artifact, a public key of a sha. 
+This command requires one of an artifact, a public key, or a sha.
 
-`rekor search --rekor-server https://api.rekor.dev --`
+`rekor search --rekor-server https://api.rekor.dev --[artifact|public-key|sha]`
