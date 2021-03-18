@@ -47,7 +47,7 @@ gpg --export --armor "jdoe@example.com" > mypublickey.key
 The `upload` command sends your public key / signature and artifact URL to the rekor transparency log.
 
 ```
-rekor upload --rekor_server api.rekor.dev --signature <artifact_signature> --public-key <your_public_key> --artifact <url_to_artifact>
+rekor upload --rekor_server https://api.rekor.dev --signature <artifact_signature> --public-key <your_public_key> --artifact <url_to_artifact>
 ```
 
 Firstly the rekor command will verify your public key, signature and download
@@ -84,11 +84,11 @@ An entry in the log can be retrieved by using either the log index or the artifa
 This can be performed with the log index, or the UUID
 
 ```
-rekor get --rekor-server api.rekor.dev --log-index <log-index>
+rekor get --rekor-server https://api.rekor.dev --log-index <log-index>
 ```
 
 ```
-rekor get --rekor-server api.rekor.dev --uuid <uuid>
+rekor get --rekor-server https://api.rekor.dev --uuid <uuid>
 ```
 
 ## Log Info
@@ -96,7 +96,7 @@ rekor get --rekor-server api.rekor.dev --uuid <uuid>
 The log info command retrieves the public key of the transparency log (unless already declared within the client `~/.rekor/rekor.yaml`)
 and then uses the public key to verify the signing of the signed tree head.
 
-`rekor loginfo --rekor-server api.rekor.dev`
+`rekor loginfo --rekor-server https://api.rekor.dev`
 
 ## Search
 
@@ -104,4 +104,4 @@ If running a redis instance within rekor, the search command performs a redis lo
 
 This command requires one of a artifact, a public key of a sha. 
 
-`rekor search --rekor-server api.rekor.dev --`
+`rekor search --rekor-server https://api.rekor.dev --`
