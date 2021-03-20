@@ -43,7 +43,7 @@ provide a signing certificate generated upon a successful OpenID connect grant. 
 certificate transparency log and software signing materials are sent to a signature transparency log. The use of
 transparency logs introduces a trust root to the users OpenID account. We can then have guarantees that the claimed
 user was in control of an identity service providers account at the time of signing. Once the signing operation is
-complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate. 
+complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate.
 
 Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
 and hardware token generators.
@@ -110,7 +110,16 @@ Mostly for these reasons:
 * Consensus algorithms can be susceptible to majority attacks
 * Transparency logs are more [mature in this space at present](https://certificate.transparency.dev/) and they are
   capable of providing exactly what we need.
-  
+
+
+### How does this relate to the work of TUF / in-toto?
+
+sigstore is complementary to TUF / in-toto, and project members of the TUF / in-toto
+communities are collaborating with sigstore. For more details and the latest status
+please jump onto our [slack
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ).
+
+
 ### Do you plan to run a monitor?
 
 Yes, we do in some form. Currently some folks from Purdue university are working on a monitor prototype.
