@@ -66,6 +66,13 @@ params:
     url: https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ
   - title: Blog
     url: https://blog.sigstore.dev
+  - title: Legal
+    url: "/legal"
+    sublinks:
+    - title: Terms of Use
+      url: "/legal/terms_of_use"
+    - title: Privacy Policy
+      url: "/legal/privacy_policy"
 
 #    - title: Fulcio WebPKI
 #      url: /fulcio_webpki
