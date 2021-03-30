@@ -1,11 +1,10 @@
 ---
-title: privacy_policy
+title: Privacy Policy
 date: 2021-03-28T17:09:20Z
 draft: false
 section: single
 type: page
 ---
-Privacy Policy
 Effective: March 28, 2021
 
 ### Introduction
