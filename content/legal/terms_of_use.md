@@ -1,11 +1,10 @@
 ---
-title: terms_of_use
+title: Terms of Use
 date: 2021-03-28T17:09:20Z
 draft: false
 section: single
 type: page
 ---
-Terms of Use   
 Effective: March 28, 2021
 
 ### Introduction
