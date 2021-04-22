@@ -7,7 +7,6 @@ type: page
 ---
 **sigstore** is a [Linux Foundation](https://linuxfoundation.org/) project.
 
-
 **sigstore** is a project with the goal of providing a public good / non-profit service to improve the open source
 software supply chain by easing the adoption of cryptographic software signing, backed by transparency log technologies.
 
@@ -28,7 +27,7 @@ two forms of storage susceptible to tampering and therefore a less than optimal 
 
 The toolsets we have historically relied upon were also not built for the present circumstance of remote teams. This can
 be seen by the need to create a web of trust, with teams having to meet in person and sign each other's keys. The
-current tooling (outside of controlled  environments) all too often [feel inappropriate to even technical users](https://blog.filippo.io/giving-up-on-long-term-pgp/).
+current tooling (outside of controlled environments) all too often [feel inappropriate to even technical users](https://blog.filippo.io/giving-up-on-long-term-pgp/).
 
 ![Supply Chain Image](/images/ssc.png)
 <p style="text-align: center;">supply chain risks</p>
@@ -41,8 +40,8 @@ transparency logs.
 Users generate ephemeral short-lived key pairs using the sigstore client tooling. The sigstore PKI service will then
 provide a signing certificate generated upon a successful OpenID connect grant. All certificates are recorded into a
 certificate transparency log and software signing materials are sent to a signature transparency log. The use of
-transparency logs introduces a trust root to the users OpenID account. We can then have guarantees that the claimed
-user was in control of an identity service providers account at the time of signing. Once the signing operation is
+transparency logs introduces a trust root to the user's OpenID account. We can then have guarantees that the claimed
+user was in control of an identity service provider's account at the time of signing. Once the signing operation is
 complete, the keys can be discarded, removing any need for further key management or need to revoke or rotate.
 
 Using OpenID connect identities allows users to take advantage of existing security controls such as 2FA, OTP
@@ -67,7 +66,7 @@ package managers and ease the adoption of signing for their communities.
 We don't think so.
 
 The only personal data we require will be provided from an OpenID Connect grant, and we keep that as lean as
-we can (the users email address). We don't want access to your contacts, email contents, cloud drive, calendar
+we can (the user's email address). We don't want access to your contacts, email contents, cloud drive, calendar
 etc. We won't want to email you offers nor sell the accounts to another party to maintain the service. We just need a
 way of mapping a signing event to someone who has access to an identity provider account. This allows us a trust root.
 
@@ -84,12 +83,12 @@ Sure, anyone can stand up a rekor instance (rekor is the name of the transparenc
 originally planned to just run a t-log, but then we realised not many were likely to use it as the whole signing UX [is
 less than desirable](https://latacora.micro.blog/2019/07/16/the-pgp-problem.html). So we extended the project to include
 an 'easy to use' signing system. So we very much intend to keep rekor in its current state where it can be run in on its
-own. So if you perform your own signing, you can just use rekor on it's own.
+own. So if you perform your own signing, you can just use rekor on its own.
 
 Rekor has a pluggable PKI and support present for the following:
 
 * GPG
-* X509
+* X.509
 * Minisign
 
 It also has a customizable manifest schema (pluggable types), so you can get rekor to work with whatever values you need
@@ -97,20 +96,19 @@ It also has a customizable manifest schema (pluggable types), so you can get rek
 
 More details of pluggable types can be found on the related [documentation page](../docs/plugable_types).
 
-Documentation on running a rekor server [is available here](../get_started/server)
+Documentation on running a rekor server [is available here](../get_started/server).
 
-Documentation on the rekor client CLI (for adding an entry to a rekor transparency log)  [is available here](../get_started/client)
+Documentation on the rekor client CLI (for adding an entry to a rekor transparency log) [is available here](../get_started/client).
 
 ### Why not blockchain?
 
 Mostly for these reasons:
 
 * Public blockchains with all the best of intentions, often end up using a centralized entry point for canonicalization,
-  auth etc
+  auth etc.
 * Consensus algorithms can be susceptible to majority attacks
 * Transparency logs are more [mature in this space at present](https://certificate.transparency.dev/) and they are
   capable of providing exactly what we need.
-
 
 ### How does this relate to the work of TUF / in-toto?
 
@@ -118,7 +116,6 @@ sigstore is complementary to TUF / in-toto, and project members of the TUF / in-
 communities are collaborating with sigstore. For more details and the latest status
 please jump onto our [slack
 workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ).
-
 
 ### Do you plan to run a monitor?
 
