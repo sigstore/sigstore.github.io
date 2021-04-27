@@ -4,12 +4,9 @@
     
 
 <meta property="og:title" content="Run a Rekor Server" />
-<meta property="og:description" content="There are a few ways to deploy a Rekor Server.
-We have a docker-compose file available
-A kubernetes operator
-Or you could do this manually and build rekor yourself.
-Manual Installation Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
-If you want to perform fast queries add redis, if not you will need to pass --enable_retrieve_api=false when running rekor-server in the later steps of this page." />
+<meta property="og:description" content="There are a few ways to deploy a Rekor Server:
+ We have a docker-compose file available A kubernetes operator Or you could do this manually and build rekor yourself.  Manual Installation Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
+If you want to perform fast queries you will need to add redis, otherwise you must pass the --enable_retrieve_api=false flag when running rekor-server in the later steps of this page." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/get_started/server/" /><meta property="article:section" content="get_started" />
 <meta property="article:published_time" content="2020-12-08T08:12:58&#43;00:00" />
@@ -176,26 +173,28 @@ If you want to perform fast queries add redis, if not you will need to pass --en
     </div>
 
     <div class="content">
-      <p>There are a few ways to deploy a Rekor Server.</p>
-<p>We have a <a href="https://github.com/sigstore/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</p>
-<p>A <a href="https://github.com/sigstore/rekor-operator">kubernetes operator</a></p>
-<p>Or you could do this manually and build rekor yourself.</p>
+      <p>There are a few ways to deploy a Rekor Server:</p>
+<ol>
+<li>We have a <a href="https://github.com/sigstore/rekor/blob/main/docker-compose.yml">docker-compose</a> file available</li>
+<li>A <a href="https://github.com/sigstore/rekor-operator">kubernetes operator</a></li>
+<li>Or you could do this manually and build rekor yourself.</li>
+</ol>
 <h1 id="manual-installation">Manual Installation</h1>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>You will of course also need golang version 1.15 or greater and a <code>$GOPATH</code> set.</p>
-<p>If you want to perform fast queries add redis, if not you will need to pass <code>--enable_retrieve_api=false</code>
-when running <code>rekor-server</code> in the later steps of this page.</p>
+<p>If you want to perform fast queries you will need to add redis, otherwise you must pass the <code>--enable_retrieve_api=false</code>
+flag when running <code>rekor-server</code> in the later steps of this page.</p>
 <h2 id="get-rekor">Get Rekor</h2>
 <p>Grab the rekor source:</p>
 <p><code>go get -u -t -v github.com/sigstore/rekor/cmd/server</code></p>
-<ul>
-<li>Note: You can also <code>git clone</code> should you prefer</li>
-</ul>
+<blockquote>
+<p>Note: You can also <code>git clone</code> should you prefer.</p>
+</blockquote>
 <h2 id="create-database-and-populate-tables">Create Database and populate tables</h2>
 <p>Trillian requires a database, we use MariaDB for now (others to be explored later). Once this
-is installed on your machine edit the <code>scripts/createdb.sh</code> with your database root account credentials and run the
-script. If you&rsquo;re just trying out rekor, keep the db user name and password the same as in the script (test/zaphod). If
-you change these, you need to make the changes on trillians side (visit the trillian repo for details)</p>
+is installed on your machine, edit the <code>scripts/createdb.sh</code> file with your database root account credentials and run the
+script. If you&rsquo;re just trying out rekor, keep the DB user name and password the same as in the script (test/zaphod). If
+you change these, you need to make the changes on Trillian&rsquo;s side (visit the trillian repo for details).</p>
 <h2 id="build-trillian">Build Trillian</h2>
 <p>To run rekor you need to build trillian:</p>
 <pre><code>go get -u -t -v github.com/google/trillian
