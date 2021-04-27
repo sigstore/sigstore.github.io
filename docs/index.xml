@@ -48,7 +48,7 @@ Users cannot:
       <pubDate>Fri, 11 Dec 2020 12:07:22 +0000</pubDate>
       
       <guid>/docs/plugable_types/</guid>
-      <description>Description Rekor supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop your own manifest type in your prefered formatting style (json|yaml|xml).
+      <description>Description Rekor supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop your own manifest type in your preferred formatting style (json|yaml|xml).
 Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base Schema The base schema for all types is modeled off of the schema used by Kubernetes and can be found in openapi.yaml as #/definitions/ProposedEntry:</description>
     </item>
     
@@ -59,7 +59,7 @@ Currently supported types  Rekord (default type) schema  Versions: 0.0.1    Base
       
       <guid>/docs/api_example/</guid>
       <description>We use the OpenAPI specification in rekor making it easy to create your own RestFul API client.
-If you&amp;rsquo;re interested in developing an application that can store or retrive entries into a Rekor transparency log, we recommend you take a look at the swagger online editor.</description>
+If you&amp;rsquo;re interested in developing an application that can store or retrieve entries into a Rekor transparency log, we recommend you take a look at the swagger online editor.</description>
     </item>
     
     <item>
@@ -68,12 +68,9 @@ If you&amp;rsquo;re interested in developing an application that can store or re
       <pubDate>Tue, 08 Dec 2020 08:12:58 +0000</pubDate>
       
       <guid>/get_started/server/</guid>
-      <description>There are a few ways to deploy a Rekor Server.
-We have a docker-compose file available
-A kubernetes operator
-Or you could do this manually and build rekor yourself.
-Manual Installation Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
-If you want to perform fast queries add redis, if not you will need to pass --enable_retrieve_api=false when running rekor-server in the later steps of this page.</description>
+      <description>There are a few ways to deploy a Rekor Server:
+ We have a docker-compose file available A kubernetes operator Or you could do this manually and build rekor yourself.  Manual Installation Prerequisites You will of course also need golang version 1.15 or greater and a $GOPATH set.
+If you want to perform fast queries you will need to add redis, otherwise you must pass the --enable_retrieve_api=false flag when running rekor-server in the later steps of this page.</description>
     </item>
     
     <item>

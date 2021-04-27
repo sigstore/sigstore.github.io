@@ -5,13 +5,11 @@ draft: false
 section: single
 type: page
 ---
-There are a few ways to deploy a Rekor Server.
+There are a few ways to deploy a Rekor Server:
 
-We have a [docker-compose](https://github.com/sigstore/rekor/blob/main/docker-compose.yml) file available
-
-A [kubernetes operator](https://github.com/sigstore/rekor-operator)
-
-Or you could do this manually and build rekor yourself.
+ 1. We have a [docker-compose](https://github.com/sigstore/rekor/blob/main/docker-compose.yml) file available
+ 2. A [kubernetes operator](https://github.com/sigstore/rekor-operator)
+ 3. Or you could do this manually and build rekor yourself.
 
 # Manual Installation
 
@@ -19,8 +17,8 @@ Or you could do this manually and build rekor yourself.
 
 You will of course also need golang version 1.15 or greater and a `$GOPATH` set.
 
-If you want to perform fast queries add redis, if not you will need to pass `--enable_retrieve_api=false`
-when running `rekor-server` in the later steps of this page.
+If you want to perform fast queries you will need to add redis, otherwise you must pass the `--enable_retrieve_api=false`
+flag when running `rekor-server` in the later steps of this page.
 
 ## Get Rekor
 
@@ -28,14 +26,14 @@ Grab the rekor source:
 
 `go get -u -t -v github.com/sigstore/rekor/cmd/server`
 
-* Note: You can also `git clone` should you prefer
+> Note: You can also `git clone` should you prefer.
 
 ## Create Database and populate tables
 
 Trillian requires a database, we use MariaDB for now (others to be explored later). Once this
-is installed on your machine edit the `scripts/createdb.sh` with your database root account credentials and run the
-script. If you're just trying out rekor, keep the db user name and password the same as in the script (test/zaphod). If
-you change these, you need to make the changes on trillians side (visit the trillian repo for details)
+is installed on your machine, edit the `scripts/createdb.sh` file with your database root account credentials and run the
+script. If you're just trying out rekor, keep the DB user name and password the same as in the script (test/zaphod). If
+you change these, you need to make the changes on Trillian's side (visit the trillian repo for details).
 
 ## Build Trillian
 

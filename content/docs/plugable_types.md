@@ -9,7 +9,7 @@ type: page
 ## Description
 
 Rekor supports pluggable types (aka different schemas) for entries stored in the transparency log. This will allow you to develop
-your own manifest type in your prefered formatting style (json|yaml|xml).
+your own manifest type in your preferred formatting style (json|yaml|xml).
 
 ### Currently supported types
 
