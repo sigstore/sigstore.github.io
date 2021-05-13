@@ -125,8 +125,8 @@ Yes, we do in some form. Currently some folks from Purdue university are working
 
 Yes, very much! The more people monitoring the logs and rendering or providing useful services to users, the better.
 
-The sigstore transparency log (rekor) has an [OpenAPI interface](https://sigstore.dev/swagger/) to make it easier to
-integrate directly with the rekor transparency logs. You can always jump on our [slack workspace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
+We have published OpenAPI interfaces for both [Rekor](https://sigstore.dev/swagger/rekor.html) and [Fulcio](https://sigstore.dev/swagger/fulcio.html)
+The goal is to make it easier to integrate directly with sigstore services. You can always jump on our [slack workspace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
 to run your ideas past us.
 
 ### What is the current status of the project
