@@ -72,7 +72,7 @@ You would typically use this command as a means to verify an 'inclusion proof'
 showing that your artifact is stored within the transparency log.
 
 ```
-rekor verify --rekor-server <rekor_url> --signature <artifact-signature> --public-key <your_public_key> --artifact <url_to_artifact>|<local_path_artifact>
+rekor verify --rekor_server <rekor_url> --signature <artifact-signature> --public-key <your_public_key> --artifact <url_to_artifact>|<local_path_artifact>
 ```
 
 > Note that alternatively you can use a local artifact path with `--artifact`.
@@ -82,11 +82,11 @@ rekor verify --rekor-server <rekor_url> --signature <artifact-signature> --publi
 An entry in the log can be retrieved by using the `get` command with either the log index or the artifact UUID:
 
 ```
-rekor get --rekor-server https://rekor.sigstore.dev --log-index <log-index>
+rekor get --rekor_server https://rekor.sigstore.dev --log-index <log-index>
 ```
 
 ```
-rekor get --rekor-server https://rekor.sigstore.dev --uuid <uuid>
+rekor get --rekor_server https://rekor.sigstore.dev --uuid <uuid>
 ```
 
 ## Log Info
@@ -95,7 +95,7 @@ The `loginfo` command retrieves the public key of the transparency log (unless a
 and then uses this public key to verify the signature on the signed tree head.
 
 ```
-rekor loginfo --rekor-server https://rekor.sigstore.dev
+rekor loginfo --rekor_server https://rekor.sigstore.dev
 ```
 
 ## Search
@@ -105,5 +105,5 @@ If running a redis instance within rekor, the `search` command performs a redis 
 This command requires one of an artifact, a public key, or a SHA hash.
 
 ```
-rekor search --rekor-server https://rekor.sigstore.dev --[artifact|public-key|sha]
+rekor search --rekor_server https://rekor.sigstore.dev --[artifact|public-key|sha]
 ```
