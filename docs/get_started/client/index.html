@@ -193,34 +193,34 @@ this using GPG.</p>
 <pre><code>gpg --export --armor &quot;jdoe@example.com&quot; &gt; mypublickey.key
 </code></pre><h2 id="upload-an-entry-rekor">Upload an entry rekor</h2>
 <p>The <code>upload</code> command sends your public key / signature and artifact URL to the rekor transparency log.</p>
-<pre><code>rekor upload --rekor_server https://api.rekor.dev --signature &lt;artifact_signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;
+<pre><code>rekor upload --rekor_server https://rekor.sigstore.dev --signature &lt;artifact_signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;
 </code></pre><p>Firstly the rekor command will verify your public key, signature and download
 a local copy of the artifact. It will then validate the artifact signing (no
 access to your private key is required).</p>
 <p>If the validations above pass correctly, the entry will be made to rekor and an entry URL will be returned:</p>
-<pre><code>Created entry at: https://api.rekor.dev/api/v1/log/entries/b08416d417acdb0610d4a030d8f697f9d0a718024681a00fa0b9ba67072a38b5
+<pre><code>Created entry at: https://rekor.sigstore.dev/api/v1/log/entries/b08416d417acdb0610d4a030d8f697f9d0a718024681a00fa0b9ba67072a38b5
 </code></pre><p>This URL contains the UUID entry / merkle tree hash (in the above case <code>b08416d417acdb0610d4a030d8f697f9d0a718024681a00fa0b9ba67072a38b5</code>).</p>
 <p>Within here is again the UUID and the body of the entry.</p>
 <h2 id="verify-proof-of-entry">Verify Proof of Entry</h2>
 <p>The <code>verify</code> command allows you to send a public key / signature and artifact to the rekor transparency log for verification of entry.</p>
 <p>You would typically use this command as a means to verify an &lsquo;inclusion proof&rsquo;
 showing that your artifact is stored within the transparency log.</p>
-<pre><code>rekor verify --rekor-server &lt;rekor_url&gt; --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;|&lt;local_path_artifact&gt;
+<pre><code>rekor verify --rekor_server &lt;rekor_url&gt; --signature &lt;artifact-signature&gt; --public-key &lt;your_public_key&gt; --artifact &lt;url_to_artifact&gt;|&lt;local_path_artifact&gt;
 </code></pre><blockquote>
 <p>Note that alternatively you can use a local artifact path with <code>--artifact</code>.</p>
 </blockquote>
 <h2 id="get-entry">Get Entry</h2>
 <p>An entry in the log can be retrieved by using the <code>get</code> command with either the log index or the artifact UUID:</p>
-<pre><code>rekor get --rekor-server https://api.rekor.dev --log-index &lt;log-index&gt;
-</code></pre><pre><code>rekor get --rekor-server https://api.rekor.dev --uuid &lt;uuid&gt;
+<pre><code>rekor get --rekor_server https://rekor.sigstore.dev --log-index &lt;log-index&gt;
+</code></pre><pre><code>rekor get --rekor_server https://rekor.sigstore.dev --uuid &lt;uuid&gt;
 </code></pre><h2 id="log-info">Log Info</h2>
 <p>The <code>loginfo</code> command retrieves the public key of the transparency log (unless already declared within the client <code>~/.rekor/rekor.yaml</code>)
 and then uses this public key to verify the signature on the signed tree head.</p>
-<pre><code>rekor loginfo --rekor-server https://api.rekor.dev
+<pre><code>rekor loginfo --rekor_server https://rekor.sigstore.dev
 </code></pre><h2 id="search">Search</h2>
 <p>If running a redis instance within rekor, the <code>search</code> command performs a redis lookup using a file or a public key.</p>
 <p>This command requires one of an artifact, a public key, or a SHA hash.</p>
-<pre><code>rekor search --rekor-server https://api.rekor.dev --[artifact|public-key|sha]
+<pre><code>rekor search --rekor_server https://rekor.sigstore.dev --[artifact|public-key|sha]
 </code></pre>
     </div>
   </div>
