@@ -125,7 +125,7 @@ Yes, we do in some form. Currently some folks from Purdue university are working
 
 Yes, very much! The more people monitoring the logs and rendering or providing useful services to users, the better.
 
-We have published OpenAPI interfaces for both [Rekor](https://sigstore.dev/swagger/rekor.html) and [Fulcio](https://sigstore.dev/swagger/fulcio.html)
+We have published OpenAPI interfaces for both [Rekor](https://sigstore.dev/swagger/index.html?urls.primaryName=Rekor) and [Fulcio](https://sigstore.dev/swagger/index.html?urls.primaryName=Fulcio)
 The goal is to make it easier to integrate directly with sigstore services. You can always jump on our [slack workspace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
 to run your ideas past us.
 

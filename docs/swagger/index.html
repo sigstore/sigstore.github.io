@@ -48,7 +48,10 @@
       }
       // Begin Swagger UI call region
       const ui = SwaggerUIBundle({
-        url: "https://raw.githubusercontent.com/sigstore/fulcio/main/openapi.yaml",
+	urls: [
+        {url: "https://raw.githubusercontent.com/sigstore/rekor/main/openapi.yaml", name: "Rekor"},
+        {url: "https://raw.githubusercontent.com/sigstore/fulcio/main/openapi.yaml", name: "Fulcio"}
+	],
         dom_id: '#swagger-ui',
         deepLinking: true,
         presets: [
