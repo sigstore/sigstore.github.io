@@ -19,8 +19,8 @@ You will of course also need golang version 1.15 or greater and a `$GOPATH` set.
 ## Build rekor
 
 ```
-go get -u -t -v github.com/sigstore/rekor/cmd/cli
-cd $GOPATH/src/github.com/sigstore/rekor/cmd/cli
+go get -u -t -v github.com/sigstore/rekor/cmd/rekor-cli
+cd $GOPATH/src/github.com/sigstore/rekor/cmd/rekor-cli
 go build -v -o rekor
 cp rekor /usr/local/bin/
 ```
