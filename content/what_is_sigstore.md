@@ -131,11 +131,14 @@ to run your ideas past us.
 
 ### What is the current status of the project
 
-As of time of writing [27/02/2021] we have a working transparency log (rekor), that is fully operation as a standalone
-service. Files are available to run this in GKE. Work is now underway to develop WebPKI and OpenID connect based
-services that upon completion will provide the full sigstore signing infrastructure.
+As of time of writing [24/06/2021] we have a working transparency log (rekor), that is fully operation as a standalone
+service. Files are available to run this in GKE. Work is now underway to mature the
+WebPKI (fuclio) and develop client tools for various package managers and upstream communities
 
 ## Want to find out more?
 
-Come on over to our [slack
-workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ) or join our mailing list at [sigstore-dev@googlegroups.com](https://groups.google.com/g/sigstore-dev)
+* Come on over to our [slack
+workplace](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
+* follow us on [twitter @projectsigstore](https://twitter.com/projectsigstore) (we are quite busy there with updates)
+* follow our [blog](https://blog.sigstore.dev)
+* join our mailing list at [sigstore-dev@googlegroups.com](https://groups.google.com/g/sigstore-dev)
