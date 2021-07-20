@@ -102,8 +102,13 @@ rekor loginfo --rekor_server https://rekor.sigstore.dev
 
 If running a redis instance within rekor, the `search` command performs a redis lookup using a file or a public key.
 
-This command requires one of an artifact, a public key, or a SHA hash.
+This command requires one of an artifact, a public key, or a SHA hash (should be prefixed by `sha256:`).
 
 ```
 rekor search --rekor_server https://rekor.sigstore.dev --[artifact|public-key|sha]
+```
+
+For example:
+```
+rekor search --rekor_server https://rekor.sigstore.dev --sha sha256:e2e90d1a25f90a3156a27f00f3a4179578e3132ed4f010dc3498d09175b6071a
 ```
