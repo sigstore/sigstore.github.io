@@ -1,9 +1,27 @@
-# sigstore Website
+# documentation
 
-Built with Hugo. Make edits to the templates in content/ and regenerate with
-`hugo -D`
+## Setup
 
-## Security
+Install dependencies:
 
-Should you discover any security issues, please refer to sigstores [security
-process](https://github.com/sigstore/community/blob/main/SECURITY.md)
+```bash
+yarn install
+```
+
+## Development
+
+```bash
+yarn dev
+```
+
+## Static Generation
+
+This will create the `dist/` directory for publishing to static hosting:
+
+```bash
+yarn generate
+```
+
+To preview the static generated app, run `yarn start`
+
+For detailed explanation on how things work, checkout [nuxt/content](https://content.nuxtjs.org) and [@nuxt/content theme docs](https://content.nuxtjs.org/themes-docs).
