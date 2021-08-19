@@ -1,6 +1,8 @@
 {
   "title": "Sigstore Documentation",
-  "url": "",
+  "url": "docs.sigstore.dev",
+  "layout": "default",
+  "defaultBranch": "develop",
   "logo": {
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
